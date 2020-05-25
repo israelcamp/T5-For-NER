@@ -34,7 +34,7 @@ class T5ForConll2003(T5ForNERWithPL):
 
     @property
     def datapath(self,) -> str:
-        return self.get_value_or_default_hparam('datapth', '../data/conll2003/')
+        return self.get_value_or_default_hparam('datapath', '../data/conll2003/')
 
     @property
     def max_length(self,) -> int:
