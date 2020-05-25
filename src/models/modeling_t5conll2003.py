@@ -45,6 +45,10 @@ class T5ForConll2003(T5ForNERWithPL):
         return self.get_value_or_default_hparam('batch_size', 2)
 
     @property
+    def shuffle_train(self,) -> int:
+        return self.get_value_or_default_hparam('shuffle_train', True)
+
+    @property
     def num_workers(self,) -> int:
         return self.get_value_or_default_hparam('num_workers', 2)
 
@@ -79,6 +83,14 @@ class T5ForConll2003(T5ForNERWithPL):
         test_dataset = T5NERDataset(features['test'])
         return train_dataset, valid_dataset, test_dataset
 
+    def get_optimizer(self):
+        optimizer_name = self.get_value_or_default_hparam('optimizer', 'Adam')
+        optimizer_hparams = self.get_value_or_default_hparam(
+            'optimizer_hparams', {})
+        lr = self.get_value_or_default_hparam('lr', 5e-3)
+        optimizer = getattr(torch.optim, optimizer_name)
+        return optimizer(self.parameters(), lr=lr, **optimizer_hparams)
+
     def prepare_data(self,):
         examples = self.get_examples()
         self.tokenizer = self.get_tokenizer()
@@ -87,7 +99,7 @@ class T5ForConll2003(T5ForNERWithPL):
             features)
 
     def train_dataloader(self) -> DataLoader:
-        return DataLoader(self.train_dataset, batch_size=self.batch_size, shuffle=True, num_workers=self.num_workers)
+        return DataLoader(self.train_dataset, batch_size=self.batch_size, shuffle=self.shuffle_train, num_workers=self.num_workers)
 
     def val_dataloader(self) -> DataLoader:
         return DataLoader(self.val_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers)
@@ -96,9 +108,5 @@ class T5ForConll2003(T5ForNERWithPL):
         return DataLoader(self.test_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers)
 
     def configure_optimizers(self):
-        optimizer_name = self.get_value_or_default_hparam('optimizer', 'Adam')
-        optimizer_hparams = self.get_value_or_default_hparam(
-            'optimizer_hparams', {})
-        lr = self.get_value_or_default_hparam('lr', 5e-3)
-        optimizer = getattr(torch.optim, optimizer_name)
-        return optimizer(self.parameters(), lr=lr, **optimizer_hparams)
+        optimizer = self.get_optimizer()
+        return optimizer
