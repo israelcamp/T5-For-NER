@@ -18,6 +18,10 @@ class T5ForConll2003(T5ForNERWithPL):
         super().__init__(config)
         self.hparams = hparams
 
+        self.train_dataset = None
+        self.val_dataset = None
+        self.test_dataset = None
+
     @property
     def entities_tokens(self) -> List[str]:
         return [
@@ -56,6 +60,9 @@ class T5ForConll2003(T5ForNERWithPL):
     def _ifnone(value, default):
         return value if value is not None else default
 
+    def _has_cached_datasets(self,):
+        return self.train_dataset is not None and self.val_dataset is not None and self.test_dataset is not None
+
     def get_value_or_default_hparam(self, key: str, default):
         value = self.get_hparam(key)
         return self._ifnone(value, default)
@@ -92,11 +99,12 @@ class T5ForConll2003(T5ForNERWithPL):
         return optimizer(self.parameters(), lr=lr, **optimizer_hparams)
 
     def prepare_data(self,):
-        examples = self.get_examples()
         self.tokenizer = self.get_tokenizer()
-        features = self.get_features(examples)
-        self.train_dataset, self.val_dataset, self.test_dataset = self.get_datasets(
-            features)
+        if not self._has_cached_datasets():
+            examples = self.get_examples()
+            features = self.get_features(examples)
+            self.train_dataset, self.val_dataset, self.test_dataset = self.get_datasets(
+                features)
 
     def train_dataloader(self) -> DataLoader:
         return DataLoader(self.train_dataset, batch_size=self.batch_size, shuffle=self.shuffle_train, num_workers=self.num_workers)
