@@ -22,7 +22,7 @@ class T5ForNERWithPL(T5ForConditionalGeneration, pl.LightningModule):
     def get_target_token_ids(self, batch):
         lm_labels = batch[2]
         target_token_ids = lm_labels.where(
-            lm_labels != -100, torch.tensor(self.tokenizer.pad_token_id, device=self._device))
+            lm_labels != -100, torch.tensor(self.tokenizer.pad_token_id).type_as(lm_labels))
         return target_token_ids
 
     def get_predicted_token_ids(self, batch):
