@@ -5,7 +5,6 @@ from ..utils import read_txt
 from ..input.example import InputExample
 
 
-
 def convert_text_to_example(text: str, split_line_by: str = '\n', split_row_by: str = ' ') -> InputExample:
     words, labels = [], []
     for row in text.split(split_line_by):
@@ -39,11 +38,12 @@ def convert_text_to_example(text: str, split_line_by: str = '\n', split_row_by: 
     return InputExample(source_words, target_words)
 
 
-def examples_from_file(filepath: str) -> List[InputExample]:
+def examples_from_file(filepath: str, split_examples_by='\n\n', strip=True, **kwargs) -> List[InputExample]:
     file_text = read_txt(filepath)
-    text_examples = file_text.split('\n\n')
-    text_examples = text_examples[1:-1]  # remove first and last
-    return [convert_text_to_example(te) for te in text_examples]
+    text_examples = file_text.split(split_examples_by)
+    if strip:
+        text_examples = text_examples[1:-1]  # remove first and last
+    return [convert_text_to_example(te, **kwargs) for te in text_examples]
 
 
 def get_example_sets(folderpath: str, sets=['train', 'valid', 'test']) -> Dict[str, List[InputExample]]:
