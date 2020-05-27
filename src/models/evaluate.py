@@ -20,6 +20,16 @@ def get_entities_from_token_ids(token_ids: List[int],
     return entities
 
 
+def get_tokens_from_ids(token_ids, tokenizer, entities):
+    if isinstance(entities, dict):
+        sentence = tokenizer.decode(token_ids)
+        for ent, tok in entities.items():
+            sentence = sentence.replace(ent, tok)
+        return tokenizer.tokenize(sentence)
+    else:
+        return tokenizer.convert_ids_to_tokens(token_ids)
+
+
 def get_entities_from_tokens(tokens: List[str], tokenizer: transformers.PreTrainedTokenizer,
                              entities_tokens: List[str], length: int = 0, fill_token: str = 'O') -> List[str]:
     sequence_entities = []  # will save all the entities
@@ -54,16 +64,20 @@ def get_entities_from_tokens(tokens: List[str], tokenizer: transformers.PreTrain
 def get_trues_and_preds_entities(target_token_ids: Union[List[List[int]], torch.Tensor],
                                  predicted_token_ids: Union[List[List[int]], torch.Tensor],
                                  tokenizer: transformers.PreTrainedTokenizer,
-                                 entities_tokens: List[str],
+                                 entities: Union[Dict[str, str], List[str]],
                                  fill_token: str = 'O') -> Tuple[List[List[str]]]:
-    assert len(target_token_ids) == len(predicted_token_ids)
+    assert len(target_token_ids) == len(
+        predicted_token_ids)  # ensure batch size is the same
     all_target_entities = []
     all_predicted_entities = []
+    entities_tokens = list(entities.values()) if isinstance(
+        entities, dict) else entities
     for idx in range(len(target_token_ids)):
         # convert to tokens
-        target_tokens = tokenizer.convert_ids_to_tokens(target_token_ids[idx])
-        predicted_tokens = tokenizer.convert_ids_to_tokens(
-            predicted_token_ids[idx])
+        target_tokens = get_tokens_from_ids(
+            target_token_ids[idx], tokenizer, entities)
+        predicted_tokens = get_tokens_from_ids(
+            predicted_token_ids[idx], tokenizer, entities)
         # convert to entities
         target_entities = get_entities_from_tokens(
             target_tokens, tokenizer, entities_tokens)

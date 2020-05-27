@@ -33,8 +33,32 @@ class T5ForConll2003(T5ForNERWithPL):
         ]
 
     @property
+    def labels2words(self,):
+        return {
+            'O': '[Other]',
+            'PER': '[Person]',
+            'LOC': '[Local]',
+            'MISC': '[Miscellaneous]',
+            'ORG': '[Organization]'
+        }
+
+    @property
+    def entities2tokens(self,):
+        return{
+            '[Other]': '<O>',
+            '[Person]': '<PER>',
+            '[Local]': '<LOC>',
+            '[Miscellaneous]': '<MISC>',
+            '[Organization]': '<ORG>'
+        }
+
+    @property
     def pretrained_model_name(self,) -> str:
         return self.pretrained_model_name_or_path
+
+    @property
+    def labels_mode(self,):
+        return self.get_value_or_default_hparam('labels_mode', 'tokens')
 
     @property
     def datapath(self,) -> str:
@@ -43,6 +67,14 @@ class T5ForConll2003(T5ForNERWithPL):
     @property
     def max_length(self,) -> int:
         return self.get_value_or_default_hparam('max_length', 128)
+
+    @property
+    def source_max_length(self,) -> int:
+        return self.get_value_or_default_hparam('source_max_length', None)
+
+    @property
+    def target_max_length(self,) -> int:
+        return self.get_value_or_default_hparam('target_max_length', None)
 
     @property
     def batch_size(self,) -> int:
@@ -74,10 +106,18 @@ class T5ForConll2003(T5ForNERWithPL):
         return param
 
     def get_examples(self,) -> Union[List[InputExample], Dict[str, List[InputExample]]]:
-        return get_example_sets(self.datapath)
+        kwargs = {}
+        if self.labels_mode == 'words':
+            kwargs['labels2words'] = self.labels2words
+        return get_example_sets(self.datapath, **kwargs)
 
     def get_features(self, examples: Union[List[InputExample], Dict[str, List[InputExample]]]) -> Union[List[InputFeature], Dict[str, List[InputFeature]]]:
-        return convert_example_sets_to_features_sets(examples, self.tokenizer, max_length=self.max_length)
+        kwargs = {
+            'max_length': self.max_length,
+            'source_max_length': self.source_max_length,
+            'target_max_length': self.target_max_length
+        }
+        return convert_example_sets_to_features_sets(examples, self.tokenizer, **kwargs)
 
     def get_tokenizer(self,) -> transformers.PreTrainedTokenizer:
         tokenizer = T5Tokenizer.from_pretrained(self.pretrained_model_name)

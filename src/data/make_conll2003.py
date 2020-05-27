@@ -5,7 +5,7 @@ from ..utils import read_txt
 from ..input.example import InputExample
 
 
-def convert_text_to_example(text: str, split_line_by: str = '\n', split_row_by: str = ' ') -> InputExample:
+def convert_text_to_example(text, labels2words={}, split_line_by='\n', split_row_by=' '):
     words, labels = [], []
     for row in text.split(split_line_by):
         ws = row.split(split_row_by)
@@ -22,7 +22,7 @@ def convert_text_to_example(text: str, split_line_by: str = '\n', split_row_by: 
 
         if l == 'O':
             source_words.append(w)
-            target_words.extend([w, f'<{l}>'])
+            target_words.extend([w, labels2words.get(l, f'<{l}>')])
             i += 1
             continue
         else:  # found a B-ENT
@@ -32,7 +32,8 @@ def convert_text_to_example(text: str, split_line_by: str = '\n', split_row_by: 
                 j += 1
             # adds the span
             source_words.extend(words[i:j])
-            target_words.extend(words[i:j] + [f'<{ent_label}>'])
+            target_words.extend(
+                words[i:j] + [labels2words.get(ent_label, f'<{ent_label}>')])
             i = j
 
     return InputExample(source_words, target_words)
@@ -46,8 +47,8 @@ def examples_from_file(filepath: str, split_examples_by='\n\n', strip=True, **kw
     return [convert_text_to_example(te, **kwargs) for te in text_examples]
 
 
-def get_example_sets(folderpath: str, sets=['train', 'valid', 'test']) -> Dict[str, List[InputExample]]:
+def get_example_sets(folderpath: str, sets=['train', 'valid', 'test'], **kwargs) -> Dict[str, List[InputExample]]:
     return {
-        key: examples_from_file(os.path.join(folderpath, f'{key}.txt'))
+        key: examples_from_file(os.path.join(folderpath, f'{key}.txt'), **kwargs)
         for key in sets
     }

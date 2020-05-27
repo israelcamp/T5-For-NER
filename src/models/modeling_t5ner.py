@@ -29,8 +29,9 @@ class T5ForNERWithPL(T5ForConditionalGeneration, pl.LightningModule):
         return self.generate(input_ids=batch[0], attention_mask=batch[1], do_sample=False)
 
     def get_target_and_predicted_entities(self, target_token_ids, predicted_token_ids):
+        entities = self.entities_tokens if self.labels_mode == 'tokens' else self.entities2tokens
         target_entities, predicted_entities = get_trues_and_preds_entities(
-            target_token_ids, predicted_token_ids, self.tokenizer, self.entities_tokens)
+            target_token_ids, predicted_token_ids, self.tokenizer, entities=entities)
         return target_entities, predicted_entities
 
     def _handle_batch(self, batch):

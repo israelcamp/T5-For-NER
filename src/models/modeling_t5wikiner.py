@@ -16,7 +16,10 @@ class T5ForWikiNER(T5ForConll2003):
         return self.get_value_or_default_hparam('datapath', '../data/wikiner-en/')
 
     def get_examples(self,) -> Union[List[InputExample], Dict[str, List[InputExample]]]:
-        return get_example_sets(self.datapath)
+        kwargs = {}
+        if self.labels_mode == 'words':
+            kwargs['labels2words'] = self.labels2words
+        return get_example_sets(self.datapath, **kwargs)
 
     def get_datasets(self, features: Union[List[InputFeature], Dict[str, List[InputFeature]]]) -> Tuple[Dataset]:
         train_dataset = T5NERDataset(features['train'])
