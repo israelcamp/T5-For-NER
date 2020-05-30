@@ -61,6 +61,10 @@ class T5ForConll2003(T5ForNERWithPL):
         return self.get_value_or_default_hparam('labels_mode', 'tokens')
 
     @property
+    def merge_O(self,):
+        return self.get_value_or_default_hparam('merge_O', False)
+
+    @property
     def datapath(self,) -> str:
         return self.get_value_or_default_hparam('datapath', '../data/conll2003/')
 
@@ -95,6 +99,13 @@ class T5ForConll2003(T5ForNERWithPL):
     def _has_cached_datasets(self,):
         return self.train_dataset is not None and self.val_dataset is not None and self.test_dataset is not None
 
+    def _construct_examples_kwargs(self,):
+        kwargs = {}
+        kwargs['merge_O'] = self.merge_O
+        if self.labels_mode == 'words':
+            kwargs['labels2words'] = self.labels2words
+        return kwargs
+
     def get_value_or_default_hparam(self, key: str, default):
         value = self.get_hparam(key)
         return self._ifnone(value, default)
@@ -106,9 +117,7 @@ class T5ForConll2003(T5ForNERWithPL):
         return param
 
     def get_examples(self,) -> Union[List[InputExample], Dict[str, List[InputExample]]]:
-        kwargs = {}
-        if self.labels_mode == 'words':
-            kwargs['labels2words'] = self.labels2words
+        kwargs = self._construct_examples_kwargs()
         return get_example_sets(self.datapath, **kwargs)
 
     def get_features(self, examples: Union[List[InputExample], Dict[str, List[InputExample]]]) -> Union[List[InputFeature], Dict[str, List[InputFeature]]]:
