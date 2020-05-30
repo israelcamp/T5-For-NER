@@ -1,6 +1,7 @@
 from typing import Dict, List, Union, Tuple
 
 import torch
+from torch import nn
 from torch.utils.data import DataLoader, Dataset
 from transformers import T5Tokenizer
 import transformers
@@ -17,6 +18,10 @@ class T5ForConll2003(T5ForNERWithPL):
     def __init__(self, config, hparams=None):
         super().__init__(config)
         self.hparams = hparams
+        self.tokenizer = self.get_tokenizer()
+
+        # creating the loss
+        self._token_weights = self._create_token_weights()
 
         self.train_dataset = None
         self.val_dataset = None
@@ -61,6 +66,10 @@ class T5ForConll2003(T5ForNERWithPL):
         return self.get_value_or_default_hparam('labels_mode', 'tokens')
 
     @property
+    def token_weights(self,):
+        return self.get_value_or_default_hparam('token_weights', ())
+
+    @property
     def merge_O(self,):
         return self.get_value_or_default_hparam('merge_O', False)
 
@@ -95,6 +104,13 @@ class T5ForConll2003(T5ForNERWithPL):
     @staticmethod
     def _ifnone(value, default):
         return value if value is not None else default
+
+    def _create_token_weights(self,):
+        weights = torch.ones(len(self.tokenizer))
+        for token, weight in self.token_weights:
+            id = self.tokenizer.convert_tokens_to_ids(token)
+            weights[id] = weight
+        return weights
 
     def _has_cached_datasets(self,):
         return self.train_dataset is not None and self.val_dataset is not None and self.test_dataset is not None
@@ -148,7 +164,6 @@ class T5ForConll2003(T5ForNERWithPL):
         return optimizer(self.parameters(), lr=lr, **optimizer_hparams)
 
     def prepare_data(self,):
-        self.tokenizer = self.get_tokenizer()
         if not self._has_cached_datasets():
             examples = self.get_examples()
             features = self.get_features(examples)
@@ -167,3 +182,26 @@ class T5ForConll2003(T5ForNERWithPL):
     def configure_optimizers(self):
         optimizer = self.get_optimizer()
         return optimizer
+
+    def forward(self, input_ids=None, attention_mask=None, encoder_outputs=None,
+                decoder_input_ids=None, decoder_attention_mask=None, decoder_past_key_value_states=None,
+                use_cache=True, lm_labels=None, inputs_embeds=None, decoder_inputs_embeds=None, head_mask=None):
+
+        # forward without lm_labels
+        outputs = super().forward(input_ids=input_ids,
+                                  attention_mask=attention_mask,
+                                  encoder_outputs=encoder_outputs,
+                                  decoder_input_ids=decoder_input_ids,
+                                  decoder_attention_mask=decoder_attention_mask,
+                                  decoder_past_key_value_states=decoder_past_key_value_states,
+                                  use_cache=use_cache, inputs_embeds=inputs_embeds,
+                                  decoder_inputs_embeds=decoder_inputs_embeds,
+                                  head_mask=head_mask)
+        if lm_labels is not None:
+            lm_logits = outputs[0]
+            loss_fct = nn.CrossEntropyLoss(
+                weight=self._token_weights, ignore_index=-100)
+            loss = loss_fct(
+                lm_logits.view(-1, lm_logits.size(-1)), lm_labels.view(-1))
+            outputs = (loss,) + outputs
+        return outputs
