@@ -1,14 +1,16 @@
 from typing import List
 
 import torch
+from torch import nn
 import pytorch_lightning as pl
 from transformers import T5ForConditionalGeneration
 from seqeval.metrics import f1_score, classification_report
 
 from .evaluate import get_trues_and_preds_entities
+from .modeling_t5 import WeightedT5
 
 
-class T5ForNERWithPL(T5ForConditionalGeneration, pl.LightningModule):
+class T5ForNERWithPL(WeightedT5, pl.LightningModule):
 
     @property
     def entities_tokens(self) -> List[str]:
