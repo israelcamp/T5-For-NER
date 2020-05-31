@@ -137,7 +137,7 @@ class T5ForConll2003(T5ForNERWithPL):
     def get_predicted_token_ids(self, batch):
         return self.generate(input_ids=batch[0],
                              attention_mask=batch[1],
-                             max_length=self.target_max_length,
+                             max_length=self.target_max_length if self.target_max_length is not None else self.max_length,
                              **self.generate_kwargs)
 
     def get_value_or_default_hparam(self, key: str, default):
