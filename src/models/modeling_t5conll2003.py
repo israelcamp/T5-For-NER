@@ -90,6 +90,10 @@ class T5ForConll2003(T5ForNERWithPL):
         return self.get_value_or_default_hparam('target_max_length', None)
 
     @property
+    def generate_kwargs(self,) -> dict:
+        return self.get_value_or_default_hparam('generate_kwargs', {'do_sample': False})
+
+    @property
     def batch_size(self,) -> int:
         return self.get_value_or_default_hparam('batch_size', 2)
 
@@ -129,6 +133,12 @@ class T5ForConll2003(T5ForNERWithPL):
                        lm_labels=lm_labels,
                        cross_entropy_weights=self._token_weights.type_as(input_ids.float()))
         return outputs
+
+    def get_predicted_token_ids(self, batch):
+        return self.generate(input_ids=batch[0],
+                             attention_mask=batch[1],
+                             max_length=self.target_max_length,
+                             **self.generate_kwargs)
 
     def get_value_or_default_hparam(self, key: str, default):
         value = self.get_hparam(key)
