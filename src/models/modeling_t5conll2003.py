@@ -127,6 +127,7 @@ class T5ForConll2003(T5ForNERWithPL):
         return kwargs
 
     def _handle_batch(self, batch):
+        batch = self.trim_batch(batch)
         input_ids, attention_mask, lm_labels = batch
         outputs = self(input_ids=input_ids,
                        attention_mask=attention_mask,

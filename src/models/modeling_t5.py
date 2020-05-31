@@ -72,7 +72,7 @@ class WeightedT5(T5ForConditionalGeneration):
             loss_fct = nn.CrossEntropyLoss(
                 weight=cross_entropy_weights, ignore_index=-100)
             loss = loss_fct(
-                lm_logits.view(-1, lm_logits.size(-1)), lm_labels.view(-1))
+                lm_logits.reshape(-1, lm_logits.size(-1)), lm_labels.reshape(-1))
             # TODO(thom): Add z_loss https://github.com/tensorflow/mesh/blob/fa19d69eafc9a482aff0b59ddd96b025c0cb207d/mesh_tensorflow/layers.py#L666
             decoder_outputs = (loss,) + decoder_outputs
 

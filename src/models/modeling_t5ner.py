@@ -21,6 +21,21 @@ class T5ForNERWithPL(WeightedT5, pl.LightningModule):
         cls.pretrained_model_name_or_path = pretrained_model_name_or_path
         return super(T5ForConditionalGeneration, cls).from_pretrained(pretrained_model_name_or_path, **kwargs)
 
+    @staticmethod
+    def trim_matrix(mat, value):
+        eq_val = (mat == value).float()
+        eq_val = eq_val.cumsum(-1)
+        index = torch.nonzero(eq_val == 1.)[:, 1].max().item()
+        return mat[:, :index], index
+
+    def trim_batch(self, batch):
+        input_ids, attention_mask, lm_labels = batch
+        input_ids, index = self.trim_matrix(
+            input_ids, self.config.pad_token_id)
+        attention_mask = attention_mask[:, :index]
+        lm_labels, _ = self.trim_matrix(lm_labels, -100)
+        return input_ids, attention_mask, lm_labels
+
     def get_target_token_ids(self, batch):
         lm_labels = batch[2]
         target_token_ids = lm_labels.where(
@@ -37,9 +52,11 @@ class T5ForNERWithPL(WeightedT5, pl.LightningModule):
         return target_entities, predicted_entities
 
     def _handle_batch(self, batch):
+        batch = self.trim_batch(batch)
         input_ids, attention_mask, lm_labels = batch
         outputs = self(input_ids=input_ids,
-                       attention_mask=attention_mask, lm_labels=lm_labels)
+                       attention_mask=attention_mask,
+                       lm_labels=lm_labels)
         return outputs
 
     def _handle_eval_batch(self, batch):
