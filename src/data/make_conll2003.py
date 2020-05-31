@@ -27,11 +27,12 @@ def convert_text_to_example(text, labels2words={}, split_line_by='\n', split_row
                     j += 1
                 # adds the span
                 source_words.extend(words[i:j])
-                target_words.extend(words[i:j] + [f'<{l}>'])
+                target_words.extend(
+                    words[i:j] + [labels2words.get(l, f'<{l}>')])
                 i = j
             else:
                 source_words.append(w)
-                target_words.extend([w, f'<{l}>'])
+                target_words.extend([w, labels2words.get(l, f'<{l}>')])
                 i += 1
                 continue
         else:  # found a B-ENT
