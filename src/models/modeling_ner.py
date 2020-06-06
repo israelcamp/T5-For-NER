@@ -25,7 +25,11 @@ class ModelForNERBase(ConfigBase):
     def trim_matrix(mat, value):
         eq_val = (mat == value).float()
         eq_val = eq_val.cumsum(-1)
-        index = torch.nonzero(eq_val == 1.)[:, 1].max().item()
+        index = torch.nonzero(eq_val == 1.)
+        if len(index) and len(index) == len(mat):
+            index = index[:, 1].max().item()
+        else:
+            index = mat.shape[-1]
         return mat[:, :index], index
 
     def trim_batch(self, batch):
@@ -113,4 +117,3 @@ class ModelForNERBase(ConfigBase):
         loss_avg, f1, report = self._handle_eval_epoch_end(
             outputs, phase='test')
         return {'test_loss': loss_avg, 'test_f1': f1, 'test_report': report}
-
