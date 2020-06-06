@@ -66,8 +66,8 @@ class ModelForNERBase(ConfigBase):
         input_ids, attention_mask, lm_labels = batch
         outputs = self(input_ids=input_ids,
                        attention_mask=attention_mask,
-                       lm_labels=lm_labels,
-                       cross_entropy_weights=self._token_weights.type_as(input_ids.float()))
+                       lm_labels=lm_labels)
+        #    cross_entropy_weights=self._token_weights.type_as(input_ids.float()))
         return outputs
 
     def _handle_eval_batch(self, batch):

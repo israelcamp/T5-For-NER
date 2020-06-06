@@ -1,11 +1,11 @@
-from transformers import BartTokenizer
+from transformers import BartTokenizer, BartForConditionalGeneration
 import pytorch_lightning as pl
 
 from .modeling_bart import WeightedBart
 from .modeling_ner import ModelForNERBase
 
 
-class BartPL(WeightedBart, pl.LightningModule):
+class BartPL(BartForConditionalGeneration, pl.LightningModule):
     pass
 
 
