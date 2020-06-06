@@ -2,6 +2,7 @@ from typing import List
 
 import torch
 from torch import nn
+from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 from seqeval.metrics import f1_score, classification_report
 
@@ -53,6 +54,9 @@ class ModelForNERBase(pl.LightningModule, ConfigBase):
         target_entities, predicted_entities = get_trues_and_preds_entities(
             target_token_ids, predicted_token_ids, self.tokenizer, entities=entities)
         return target_entities, predicted_entities
+
+    def get_parameters(self):
+        return self.parameters()
 
     def _handle_batch(self, batch):
         batch = self.trim_batch(batch)
@@ -111,14 +115,15 @@ class ModelForNERBase(pl.LightningModule, ConfigBase):
             outputs, phase='test')
         return {'test_loss': loss_avg, 'test_f1': f1, 'test_report': report}
 
+    def train_dataloader(self) -> DataLoader:
+        return DataLoader(self.train_dataset, batch_size=self.batch_size, shuffle=self.shuffle_train, num_workers=self.num_workers)
+
+    def val_dataloader(self) -> DataLoader:
+        return DataLoader(self.val_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers)
+
+    def test_dataloader(self) -> DataLoader:
+        return DataLoader(self.test_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers)
+
     def configure_optimizers(self):
-        raise NotImplementedError
-
-    def train_dataloader(self):
-        raise NotImplementedError
-
-    def val_dataloader(self):
-        raise NotImplementedError
-
-    def test_dataloader(self):
-        raise NotImplementedError
+        optimizer = self.get_optimizer()
+        return optimizer
