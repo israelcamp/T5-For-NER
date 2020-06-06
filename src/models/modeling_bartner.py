@@ -5,7 +5,7 @@ from .modeling_bart import WeightedBart
 from .modeling_ner import ModelForNERBase
 
 
-class BartPL(WeightedT5, pl.LightningModule):
+class BartPL(WeightedBart, pl.LightningModule):
     pass
 
 
