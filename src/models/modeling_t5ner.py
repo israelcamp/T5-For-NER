@@ -5,11 +5,14 @@ from .modeling_t5 import WeightedT5
 from .modeling_ner import ModelForNERBase
 
 
-class T5ForNER(WeightedT5, ModelForNERBase):
+class T5PL(WeightedT5, pl.LightningModule):
+    pass
+
+
+class T5ForNER(ModelForNERBase, T5PL):
 
     def __init__(self, config, hparams):
-        super(pl.LightningModule, self).__init__()
-        super().__init__(config)
+        super(T5PL, self).__init__(config)
 
         self.hparams = hparams
 
@@ -22,5 +25,6 @@ class T5ForNER(WeightedT5, ModelForNERBase):
         self.test_dataset = None
 
     def get_tokenizer(self,):
-        pretrained_model = self.get_value_or_default_hparam('pretrained_model', 't5-small')
+        pretrained_model = self.get_value_or_default_hparam(
+            'pretrained_model', 't5-small')
         return T5Tokenizer.from_pretrained(pretrained_model)

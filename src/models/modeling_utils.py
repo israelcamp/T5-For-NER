@@ -143,13 +143,14 @@ class ConfigBase:
                 features)
 
     def train_dataloader(self) -> DataLoader:
-        raise NotImplementedError
+        return DataLoader(self.train_dataset, batch_size=self.batch_size, shuffle=self.shuffle_train, num_workers=self.num_workers)
 
     def val_dataloader(self) -> DataLoader:
-        raise NotImplementedError
+        return DataLoader(self.val_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers)
 
     def test_dataloader(self) -> DataLoader:
-        raise NotImplementedError
+        return DataLoader(self.test_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers)
 
     def configure_optimizers(self):
-        raise NotImplementedError
+        optimizer = self.get_optimizer()
+        return optimizer

@@ -10,10 +10,9 @@ from .evaluate import get_trues_and_preds_entities
 from .modeling_utils import ConfigBase
 
 
-class ModelForNERBase(pl.LightningModule, ConfigBase):
+class ModelForNERBase(ConfigBase):
 
     def __init__(self, hparams=None):
-        super(pl.LightningModule, self).__init__()
         self.hparams = hparams
 
         self.tokenizer = self.get_tokenizer()
@@ -115,15 +114,3 @@ class ModelForNERBase(pl.LightningModule, ConfigBase):
             outputs, phase='test')
         return {'test_loss': loss_avg, 'test_f1': f1, 'test_report': report}
 
-    def train_dataloader(self) -> DataLoader:
-        return DataLoader(self.train_dataset, batch_size=self.batch_size, shuffle=self.shuffle_train, num_workers=self.num_workers)
-
-    def val_dataloader(self) -> DataLoader:
-        return DataLoader(self.val_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers)
-
-    def test_dataloader(self) -> DataLoader:
-        return DataLoader(self.test_dataset, batch_size=self.batch_size, shuffle=False, num_workers=self.num_workers)
-
-    def configure_optimizers(self):
-        optimizer = self.get_optimizer()
-        return optimizer
