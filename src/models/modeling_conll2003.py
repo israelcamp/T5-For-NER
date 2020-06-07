@@ -12,6 +12,7 @@ from ..input.feature import convert_example_sets_to_features_sets, InputFeature
 from ..data.make_conll2003 import get_example_sets
 from .modeling_t5ner import T5ForNER
 from .modeling_bartner import BartForNER
+from .modeling_encoderdecoderner import EncoderDecoderForNER
 
 
 class Conll2003Base:
@@ -67,3 +68,32 @@ class T5ForConll2003(Conll2003Base, T5ForNER):
 
 class BartForConll2003(Conll2003Base, BartForNER):
     pass
+
+
+class EncoderDecoderForConll2003(Conll2003Base, EncoderDecoderForNER):
+
+    @property
+    def labels2words(self,):
+        return {
+            'O': '[ Other ]',
+            'PER': '[ Person ]',
+            'LOC': '[ Local ]',
+            'MISC': '[ Miscellaneous ]',
+            'ORG': '[ Organization ]'
+        }
+
+    @property
+    def entities2tokens(self,):
+        return{
+            '[ Other ]': '<O>',
+            '[ Person ]': '<PER>',
+            '[ Local ]': '<LOC>',
+            '[ Miscellaneous ]': '<MISC>',
+            '[ Organization ]': '<ORG>'
+        }
+
+    def get_tokenizer(self,) -> transformers.PreTrainedTokenizer:
+        tokenizer = super().get_tokenizer()
+        tokenizer.add_tokens(self.entities_tokens)
+        tokenizer.add_special_tokens({'eos_token': '<EOS>'})
+        return tokenizer

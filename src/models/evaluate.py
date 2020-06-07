@@ -47,7 +47,7 @@ def get_entities_from_tokens(tokens: List[str], tokenizer: transformers.PreTrain
             _len = len(current_entity)
             sequence_entities += [blabel] + [ilabel] * (_len - 1)
             current_entity.clear()
-        elif token in (tokenizer.eos_token, tokenizer.pad_token):
+        elif token in (tokenizer.sep_token, tokenizer.eos_token, tokenizer.pad_token):
             break
         else:
             current_entity.append(token)

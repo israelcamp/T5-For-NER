@@ -79,6 +79,10 @@ class ConfigBase:
     def num_workers(self,) -> int:
         return self.get_value_or_default_hparam('num_workers', 2)
 
+    @property
+    def end_token(self,):
+        return self.get_value_or_default_hparam('end_token', 'eos')
+
     @staticmethod
     def _ifnone(value, default):
         return value if value is not None else default
@@ -123,7 +127,8 @@ class ConfigBase:
         kwargs = {
             'max_length': self.max_length,
             'source_max_length': self.source_max_length,
-            'target_max_length': self.target_max_length
+            'target_max_length': self.target_max_length,
+            'end_token': self.end_token
         }
         return convert_example_sets_to_features_sets(examples, self.tokenizer, **kwargs)
 
