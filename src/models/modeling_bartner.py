@@ -6,7 +6,16 @@ from .modeling_ner import ModelForNERBase
 
 
 class BartPL(BartForConditionalGeneration, pl.LightningModule):
-    pass
+    def _handle_batch(self, batch):
+        batch = self.trim_batch(batch)
+        input_ids, attention_mask, lm_labels = batch
+        outputs = self(input_ids=input_ids,
+                       attention_mask=attention_mask,
+                       lm_labels=lm_labels)
+        #    cross_entropy_weights=self._token_weights.type_as(input_ids.float()))
+        return outputs
+
+    # pass
 
 
 class BartForNER(ModelForNERBase, BartPL):

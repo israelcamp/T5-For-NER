@@ -5,7 +5,7 @@ from .modeling_t5 import WeightedT5
 from .modeling_ner import ModelForNERBase
 
 
-class T5PL(T5ForConditionalGeneration, pl.LightningModule):
+class T5PL(WeightedT5, pl.LightningModule):
     pass
 
 
