@@ -28,9 +28,9 @@ class WikinerBase(Conll2003Base):
         return train_dataset, valid_dataset, test_dataset
 
 
-class T5ForWikiner(Conll2003Base, T5ForNER):
+class T5ForWikiner(WikinerBase, T5ForNER):
     pass
 
 
-class BartForWikiner(Conll2003Base, BartForNER):
+class BartForWikiner(WikinerBase, BartForNER):
     pass
