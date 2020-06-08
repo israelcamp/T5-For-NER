@@ -26,7 +26,7 @@ class BartForNER(ModelForNERBase, BartPL):
         self.test_dataset = None
 
     def _handle_batch(self, batch):
-        batch = self.trim_batch(batch)
+        # batch = self.trim_batch(batch)
         input_ids, attention_mask, lm_labels = batch
         outputs = self(input_ids=input_ids,
                        attention_mask=attention_mask,
