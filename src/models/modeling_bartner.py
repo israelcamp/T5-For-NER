@@ -30,7 +30,7 @@ class BartForNER(ModelForNERBase, BartPL):
         input_ids, attention_mask, lm_labels = batch
         outputs = self(input_ids=input_ids,
                        attention_mask=attention_mask,
-                       labels=lm_labels)
+                       lm_labels=lm_labels)
         return outputs
 
     @staticmethod
