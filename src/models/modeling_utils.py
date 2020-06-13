@@ -83,6 +83,10 @@ class ConfigBase:
     def end_token(self,):
         return self.get_value_or_default_hparam('end_token', 'eos')
 
+    @property
+    def target_as_source(self,) -> int:
+        return self.get_value_or_default_hparam('target_as_source', False)
+
     @staticmethod
     def _ifnone(value, default):
         return value if value is not None else default
@@ -128,7 +132,8 @@ class ConfigBase:
             'max_length': self.max_length,
             'source_max_length': self.source_max_length,
             'target_max_length': self.target_max_length,
-            'end_token': self.end_token
+            'end_token': self.end_token,
+            'target_as_source': self.target_as_source
         }
         return convert_example_sets_to_features_sets(examples, self.tokenizer, **kwargs)
 

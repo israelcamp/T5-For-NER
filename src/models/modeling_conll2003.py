@@ -67,7 +67,16 @@ class T5ForConll2003(Conll2003Base, T5ForNER):
 
 
 class BartForConll2003(Conll2003Base, BartForNER):
-    pass
+
+    def get_features(self, examples):
+        kwargs = {
+            'max_length': self.max_length,
+            'source_max_length': self.source_max_length,
+            'target_max_length': self.target_max_length,
+            'end_token': self.end_token,
+            'prefix': ''
+        }
+        return convert_example_sets_to_features_sets(examples, self.tokenizer, **kwargs)
 
 
 class EncoderDecoderForConll2003(Conll2003Base, EncoderDecoderForNER):

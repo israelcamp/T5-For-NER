@@ -29,10 +29,12 @@ def convert_example_to_feature(example: InputExample, tokenizer: transformers.Pr
                                source_max_length: int = None,
                                target_max_length: int = None,
                                prefix: str = 'Extract Entities:',
-                               end_token:str = 'eos') -> InputFeature:
+                               end_token: str = 'eos',
+                               target_as_source: bool = False) -> InputFeature:
     eos_token = tokenizer.eos_token if end_token == 'eos' else tokenizer.sep_token
 
-    source = f'{prefix} {example.source}'.strip()
+    source_text = example.source if not target_as_source else example.target
+    source = f'{prefix} {source_text}'.strip()
     target = example.target
 
     source_tokens = tokenizer.tokenize(source)
