@@ -102,6 +102,17 @@ class EncoderDecoderForConll2003(Conll2003Base, EncoderDecoderForNER):
             '[ Organization ]': '<ORG>'
         }
 
+    def get_features(self, examples):
+        kwargs = {
+            'max_length': self.max_length,
+            'source_max_length': self.source_max_length,
+            'target_max_length': self.target_max_length,
+            'end_token': 'sep',
+            'prefix': '',
+            'add_cls': True
+        }
+        return convert_example_sets_to_features_sets(examples, self.tokenizer, **kwargs)
+
     def get_tokenizer(self,) -> transformers.PreTrainedTokenizer:
         tokenizer = super().get_tokenizer()
         tokenizer.add_tokens(self.entities_tokens)
