@@ -30,6 +30,7 @@ def convert_example_to_feature(example: InputExample, tokenizer: transformers.Pr
                                target_max_length: int = None,
                                prefix: str = 'Extract Entities:',
                                end_token: str = 'eos',
+                               add_cls: bool = False,
                                target_as_source: bool = False) -> InputFeature:
     eos_token = tokenizer.eos_token if end_token == 'eos' else tokenizer.sep_token
 
@@ -39,6 +40,10 @@ def convert_example_to_feature(example: InputExample, tokenizer: transformers.Pr
 
     source_tokens = tokenizer.tokenize(source)
     target_tokens = tokenizer.tokenize(target)
+
+    if add_cls:
+        source_tokens = [tokenizer.cls_token] + source_tokens
+        target_tokens = [tokenizer.cls_token] + target_tokens
 
     if source_max_length is None:
         source_max_length = max_length

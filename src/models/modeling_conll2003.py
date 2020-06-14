@@ -73,8 +73,9 @@ class BartForConll2003(Conll2003Base, BartForNER):
             'max_length': self.max_length,
             'source_max_length': self.source_max_length,
             'target_max_length': self.target_max_length,
-            'end_token': self.end_token,
-            'prefix': ''
+            'end_token': 'sep',
+            'prefix': '',
+            'add_cls': True
         }
         return convert_example_sets_to_features_sets(examples, self.tokenizer, **kwargs)
 

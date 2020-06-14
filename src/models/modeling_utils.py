@@ -84,6 +84,10 @@ class ConfigBase:
         return self.get_value_or_default_hparam('end_token', 'eos')
 
     @property
+    def add_cls(self,):
+        return self.get_value_or_default_hparam('add_cls', False)
+
+    @property
     def target_as_source(self,) -> int:
         return self.get_value_or_default_hparam('target_as_source', False)
 
@@ -133,7 +137,8 @@ class ConfigBase:
             'source_max_length': self.source_max_length,
             'target_max_length': self.target_max_length,
             'end_token': self.end_token,
-            'target_as_source': self.target_as_source
+            'target_as_source': self.target_as_source,
+            'add_cls': self.add_cls
         }
         return convert_example_sets_to_features_sets(examples, self.tokenizer, **kwargs)
 
