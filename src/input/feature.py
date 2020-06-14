@@ -38,12 +38,12 @@ def convert_example_to_feature(example: InputExample, tokenizer: transformers.Pr
     source = f'{prefix} {source_text}'.strip()
     target = example.target
 
+    if add_cls:
+        source = tokenizer.cls_token + source
+        target = tokenizer.cls_token + target
+
     source_tokens = tokenizer.tokenize(source)
     target_tokens = tokenizer.tokenize(target)
-
-    if add_cls:
-        source_tokens = [tokenizer.cls_token] + source_tokens
-        target_tokens = [tokenizer.cls_token] + target_tokens
 
     if source_max_length is None:
         source_max_length = max_length

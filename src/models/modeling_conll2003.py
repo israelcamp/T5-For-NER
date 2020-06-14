@@ -73,7 +73,7 @@ class BartForConll2003(Conll2003Base, BartForNER):
             'max_length': self.max_length,
             'source_max_length': self.source_max_length,
             'target_max_length': self.target_max_length,
-            'end_token': 'sep',
+            'end_token': 'eos',
             'prefix': '',
             'add_cls': True
         }
