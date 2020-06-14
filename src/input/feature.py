@@ -39,8 +39,8 @@ def convert_example_to_feature(example: InputExample, tokenizer: transformers.Pr
     target = example.target
 
     if add_cls:
-        source = tokenizer.cls_token + source
-        target = tokenizer.cls_token + target
+        source = f'{tokenizer.cls_token} {source}'
+        target = f'{tokenizer.cls_token} {target}'
 
     source_tokens = tokenizer.tokenize(source)
     target_tokens = tokenizer.tokenize(target)
