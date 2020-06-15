@@ -91,6 +91,14 @@ class ConfigBase:
     def target_as_source(self,) -> int:
         return self.get_value_or_default_hparam('target_as_source', False)
 
+    @property
+    def sep_source_ents(self,) -> int:
+        return self.get_value_or_default_hparam('sep_source_ents', False)
+
+    @property
+    def sep_source_token(self,) -> int:
+        return self.get_value_or_default_hparam('sep_source_token', '[Ent]')
+
     @staticmethod
     def _ifnone(value, default):
         return value if value is not None else default
@@ -117,6 +125,8 @@ class ConfigBase:
     def _construct_examples_kwargs(self,):
         kwargs = {}
         kwargs['merge_O'] = self.merge_O
+        kwargs['sep_source_ents'] = self.sep_source_ents
+        kwargs['sep_source_token'] = self.sep_source_token
         if self.labels_mode == 'words':
             kwargs['labels2words'] = self.labels2words
         return kwargs

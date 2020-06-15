@@ -5,7 +5,12 @@ from ..utils import read_txt
 from ..input.example import InputExample
 
 
-def convert_text_to_example(text, labels2words={}, split_line_by='\n', split_row_by=' ', merge_O=False):
+def convert_text_to_example(text, labels2words={}, split_line_by='\n', split_row_by=' ', merge_O=False, sep_source_ents=False, sep_source_token='[Ent]'):
+    '''
+        Arguments:
+         - sep_source_ents (bool): If True then source will have entities already splited by token sep_source_token
+    '''
+
     words, labels = [], []
     for row in text.split(split_line_by):
         ws = row.split(split_row_by)
@@ -27,11 +32,16 @@ def convert_text_to_example(text, labels2words={}, split_line_by='\n', split_row
                     j += 1
                 # adds the span
                 source_words.extend(words[i:j])
+                if sep_source_ents:
+                    source_words.append(sep_source_token)
+
                 target_words.extend(
                     words[i:j] + [labels2words.get(l, f'<{l}>')])
                 i = j
             else:
                 source_words.append(w)
+                if sep_source_ents:
+                    source_words.append(sep_source_token)
                 target_words.extend([w, labels2words.get(l, f'<{l}>')])
                 i += 1
                 continue
@@ -42,6 +52,8 @@ def convert_text_to_example(text, labels2words={}, split_line_by='\n', split_row
                 j += 1
             # adds the span
             source_words.extend(words[i:j])
+            if sep_source_ents:
+                source_words.append(sep_source_token)
             target_words.extend(
                 words[i:j] + [labels2words.get(ent_label, f'<{ent_label}>')])
             i = j
