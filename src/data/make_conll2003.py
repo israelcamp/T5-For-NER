@@ -5,10 +5,18 @@ from ..utils import read_txt
 from ..input.example import InputExample
 
 
-def convert_text_to_example(text, labels2words={}, split_line_by='\n', split_row_by=' ', merge_O=False, sep_source_ents=False, sep_source_token='[Ent]'):
+def convert_text_to_example(text,
+                            labels2words={},
+                            split_line_by='\n',
+                            split_row_by=' ',
+                            merge_O=False,
+                            sep_source_ents=False,
+                            sep_target_ents=False,
+                            sep_source_token='[Ent]',):
     '''
         Arguments:
          - sep_source_ents (bool): If True then source will have entities already splited by token sep_source_token
+         - sep_target_ents (bool): Whether to use entities on target or sep_source_token
     '''
 
     words, labels = [], []
@@ -35,14 +43,16 @@ def convert_text_to_example(text, labels2words={}, split_line_by='\n', split_row
                 if sep_source_ents:
                     source_words.append(sep_source_token)
 
-                target_words.extend(
-                    words[i:j] + [labels2words.get(l, f'<{l}>')])
+                entity = labels2words.get(l, f'<{l}>') if not sep_target_ents else sep_source_token
+                target_words.extend(words[i:j] + [entity])
                 i = j
             else:
                 source_words.append(w)
                 if sep_source_ents:
                     source_words.append(sep_source_token)
-                target_words.extend([w, labels2words.get(l, f'<{l}>')])
+
+                entity = labels2words.get(l, f'<{l}>') if not sep_target_ents else sep_source_token
+                target_words.extend([w, entity])
                 i += 1
                 continue
         else:  # found a B-ENT
@@ -54,8 +64,9 @@ def convert_text_to_example(text, labels2words={}, split_line_by='\n', split_row
             source_words.extend(words[i:j])
             if sep_source_ents:
                 source_words.append(sep_source_token)
-            target_words.extend(
-                words[i:j] + [labels2words.get(ent_label, f'<{ent_label}>')])
+
+            entity = labels2words.get(ent_label, f'<{ent_label}>') if not sep_target_ents else sep_source_token
+            target_words.extend(words[i:j] + [entity])
             i = j
 
     return InputExample(source_words, target_words)

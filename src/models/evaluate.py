@@ -32,6 +32,11 @@ def get_tokens_from_ids(token_ids, tokenizer, entities):
 
 def get_entities_from_tokens(tokens: List[str], tokenizer: transformers.PreTrainedTokenizer,
                              entities_tokens: List[str], length: int = 0, fill_token: str = 'O') -> List[str]:
+
+    special_tokens = tokenizer.special_tokens_map
+    end_seq_tokens = [special_tokens[sp_token] for sp_token in [
+        'eos_token', 'sep_token', 'pad_token'] if sp_token in special_tokens.keys()]
+
     sequence_entities = []  # will save all the entities
     current_entity = []  # will save current entity
     if tokens[0] == tokenizer.pad_token:
@@ -47,7 +52,7 @@ def get_entities_from_tokens(tokens: List[str], tokenizer: transformers.PreTrain
             _len = len(current_entity)
             sequence_entities += [blabel] + [ilabel] * (_len - 1)
             current_entity.clear()
-        elif token in (tokenizer.sep_token, tokenizer.eos_token, tokenizer.pad_token):
+        elif token in end_seq_tokens:
             break
         else:
             current_entity.append(token)

@@ -23,7 +23,8 @@ class Conll2003Base:
             '<PER>',
             '<ORG>',
             '<LOC>',
-            '<MISC>'
+            '<MISC>',
+            '<Ent>'
         ]
 
     @property
@@ -33,7 +34,8 @@ class Conll2003Base:
             'PER': '[Person]',
             'LOC': '[Local]',
             'MISC': '[Miscellaneous]',
-            'ORG': '[Organization]'
+            'ORG': '[Organization]',
+            'Ent': '[Ent]'
         }
 
     @property
@@ -43,7 +45,8 @@ class Conll2003Base:
             '[Person]': '<PER>',
             '[Local]': '<LOC>',
             '[Miscellaneous]': '<MISC>',
-            '[Organization]': '<ORG>'
+            '[Organization]': '<ORG>',
+            '[Ent]': '<Ent>'
         }
 
     def get_examples(self,) -> Union[List[InputExample], Dict[str, List[InputExample]]]:

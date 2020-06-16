@@ -88,16 +88,20 @@ class ConfigBase:
         return self.get_value_or_default_hparam('add_cls', False)
 
     @property
-    def target_as_source(self,) -> int:
+    def target_as_source(self,) -> bool:
         return self.get_value_or_default_hparam('target_as_source', False)
 
     @property
-    def sep_source_ents(self,) -> int:
+    def sep_source_ents(self,) -> bool:
         return self.get_value_or_default_hparam('sep_source_ents', False)
 
     @property
-    def sep_source_token(self,) -> int:
+    def sep_source_token(self,) -> str:
         return self.get_value_or_default_hparam('sep_source_token', '[Ent]')
+
+    @property
+    def sep_target_ents(self,) -> bool:
+        return self.get_value_or_default_hparam('sep_target_ents', False)
 
     @staticmethod
     def _ifnone(value, default):
@@ -127,6 +131,7 @@ class ConfigBase:
         kwargs['merge_O'] = self.merge_O
         kwargs['sep_source_ents'] = self.sep_source_ents
         kwargs['sep_source_token'] = self.sep_source_token
+        kwargs['sep_target_ents'] = self.sep_target_ents
         if self.labels_mode == 'words':
             kwargs['labels2words'] = self.labels2words
         return kwargs

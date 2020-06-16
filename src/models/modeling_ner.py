@@ -84,7 +84,10 @@ class ModelForNERBase(ConfigBase):
         predicted_entities = self._concat_lists_by_key(
             outputs, 'predicted_entities')
         f1 = f1_score(target_entities, predicted_entities)
-        report = classification_report(target_entities, predicted_entities)
+        if self.sep_target_ents:
+            report = ''
+        else:
+            report = classification_report(target_entities, predicted_entities)
         return loss_avg, f1, report
 
     def _average_key(self, outputs, key):
