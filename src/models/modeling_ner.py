@@ -98,7 +98,7 @@ class ModelForNERBase(ConfigBase):
 
     def training_step(self, batch, batch_idx):
         outputs = self._handle_batch(batch)
-        return {'loss': outputs[0]}
+        return {'loss': outputs[0], 'log': {'loss': outputs[0]}}
 
     def validation_step(self, batch, batch_idx):
         outputs, target_entities, predicted_entities = self._handle_eval_batch(
@@ -114,7 +114,8 @@ class ModelForNERBase(ConfigBase):
         loss_avg, f1, report = self._handle_eval_epoch_end(
             outputs, phase='val')
         progress_bar = {'val_f1': f1, 'val_loss': loss_avg}
-        return {'val_loss': loss_avg, 'val_f1': torch.tensor(f1), 'val_report': report, 'progress_bar': progress_bar}
+
+        return {'val_loss': loss_avg, 'val_f1': torch.tensor(f1), 'val_report': report, 'progress_bar': progress_bar, 'log': progress_bar}
 
     def test_epoch_end(self, outputs):
         loss_avg, f1, report = self._handle_eval_epoch_end(
