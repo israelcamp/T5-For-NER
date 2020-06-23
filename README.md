@@ -83,6 +83,8 @@ sep_source_token (str): String or token to be used to separate entities on input
 
 sep_target_ents (bool): Whether to use true entities on target or sep_source_token
 
+remove_accents (bool): Whether to remove accents on the sentences
+
 optimizer (str): Optimizer name as given by PyTorch
 
 lr (float): Learning rate
