@@ -39,7 +39,7 @@ if hparams.deterministic:
 
 trainer = pl.Trainer(gpus=hparams.gpus,
                      max_epochs=hparams.max_epochs,
-                     deterministic=hparams.deterministic))
+                     deterministic=hparams.deterministic)
 
 trainer.fit(model)
 
