@@ -89,6 +89,9 @@ lr (float): Learning rate
 
 optimizer_hparams (dict): Keywords to be passed down to the optimizer at instantiation
 
+deterministic (bool): Whether to do deterministic experiment
+
+seed (int): Seed used when deterministic
 
 
 
