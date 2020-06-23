@@ -1,6 +1,8 @@
 import os
 from typing import List, Dict
 
+import unidecode
+
 from ..utils import read_txt
 from ..input.example import InputExample
 
@@ -10,6 +12,7 @@ def convert_text_to_example(text,
                             split_line_by='\n',
                             split_row_by=' ',
                             merge_O=False,
+                            remove_accents=False,
                             sep_source_ents=False,
                             sep_target_ents=False,
                             sep_source_token='[Ent]',):
@@ -22,7 +25,10 @@ def convert_text_to_example(text,
     words, labels = [], []
     for row in text.split(split_line_by):
         ws = row.split(split_row_by)
-        words.append(ws[0])
+        w = ws[0]
+        if remove_accents:
+            w = unidecode.unidecode(w)
+        words.append(w)
         labels.append(ws[-1])
 
     source_words = []
@@ -43,7 +49,8 @@ def convert_text_to_example(text,
                 if sep_source_ents:
                     source_words.append(sep_source_token)
 
-                entity = labels2words.get(l, f'<{l}>') if not sep_target_ents else sep_source_token
+                entity = labels2words.get(
+                    l, f'<{l}>') if not sep_target_ents else sep_source_token
                 target_words.extend(words[i:j] + [entity])
                 i = j
             else:
@@ -51,7 +58,8 @@ def convert_text_to_example(text,
                 if sep_source_ents:
                     source_words.append(sep_source_token)
 
-                entity = labels2words.get(l, f'<{l}>') if not sep_target_ents else sep_source_token
+                entity = labels2words.get(
+                    l, f'<{l}>') if not sep_target_ents else sep_source_token
                 target_words.extend([w, entity])
                 i += 1
                 continue
@@ -65,7 +73,8 @@ def convert_text_to_example(text,
             if sep_source_ents:
                 source_words.append(sep_source_token)
 
-            entity = labels2words.get(ent_label, f'<{ent_label}>') if not sep_target_ents else sep_source_token
+            entity = labels2words.get(
+                ent_label, f'<{ent_label}>') if not sep_target_ents else sep_source_token
             target_words.extend(words[i:j] + [entity])
             i = j
 

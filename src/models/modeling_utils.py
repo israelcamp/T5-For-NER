@@ -103,6 +103,10 @@ class ConfigBase:
     def sep_target_ents(self,) -> bool:
         return self.get_value_or_default_hparam('sep_target_ents', False)
 
+    @property
+    def remove_accents(self,) -> bool:
+        return self.get_value_or_default_hparam('remove_accents', False)
+
     @staticmethod
     def _ifnone(value, default):
         return value if value is not None else default
@@ -132,6 +136,7 @@ class ConfigBase:
         kwargs['sep_source_ents'] = self.sep_source_ents
         kwargs['sep_source_token'] = self.sep_source_token
         kwargs['sep_target_ents'] = self.sep_target_ents
+        kwargs['remove_accents'] = self.remove_accents
         if self.labels_mode == 'words':
             kwargs['labels2words'] = self.labels2words
         return kwargs
