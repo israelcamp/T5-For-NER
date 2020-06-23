@@ -97,7 +97,7 @@ class EncoderDecoderForConll2003(Conll2003Base, EncoderDecoderForNER):
 
     @property
     def entities2tokens(self,):
-        return{
+        return {
             '[ Other ]': '<O>',
             '[ Person ]': '<PER>',
             '[ Local ]': '<LOC>',

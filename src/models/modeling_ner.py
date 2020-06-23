@@ -62,7 +62,7 @@ class ModelForNERBase(ConfigBase):
         return self.parameters()
 
     def _handle_batch(self, batch):
-        # batch = self.trim_batch(batch)
+        batch = self.trim_batch(batch)
         input_ids, attention_mask, lm_labels = batch
         outputs = self(input_ids=input_ids,
                        attention_mask=attention_mask,
@@ -87,7 +87,7 @@ class ModelForNERBase(ConfigBase):
         if self.sep_target_ents:
             report = ''
         else:
-            report = classification_report(target_entities, predicted_entities)
+            report = classification_report(target_entities, predicted_entities, digits=4)
         return loss_avg, f1, report
 
     def _average_key(self, outputs, key):

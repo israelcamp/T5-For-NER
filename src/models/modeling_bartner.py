@@ -12,7 +12,7 @@ class BartPL(BartForConditionalGeneration, pl.LightningModule):
 
 class BartForNER(ModelForNERBase, BartPL):
 
-    def __init__(self, config, hparams):
+    def __init__(self, config, hparams=None):
         super(BartPL, self).__init__(config)
 
         self.hparams = hparams

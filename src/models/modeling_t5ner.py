@@ -11,7 +11,7 @@ class T5PL(WeightedT5, pl.LightningModule):
 
 class T5ForNER(ModelForNERBase, T5PL):
 
-    def __init__(self, config, hparams):
+    def __init__(self, config, hparams=None):
         super(T5PL, self).__init__(config)
 
         self.hparams = hparams

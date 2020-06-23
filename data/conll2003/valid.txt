@@ -1,3 +1,5 @@
+-DOCSTART- -X- -X- O
+
 CRICKET NNP B-NP O
 - : O O
 LEICESTERSHIRE NNP B-NP B-ORG
@@ -454,6 +456,8 @@ for IN B-PP O
 three CD B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 CRICKET NNP B-NP O
 - : O O
 ENGLISH JJ B-NP B-MISC
@@ -707,6 +711,8 @@ Smith NNP I-NP I-PER
 5-68 CD I-NP O
 ) ) O O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 CRICKET NNP B-NP O
 - : O O
@@ -1087,6 +1093,8 @@ London NNP B-NP B-LOC
 ) ) O O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 SHEARER NN B-NP B-PER
@@ -1354,6 +1362,8 @@ Les NNP I-NP B-PER
 Ferdinand NNP I-NP I-PER
 . . O O
 
+-DOCSTART- -X- -X- O
+
 BASKETBALL NNP B-NP O
 - : O O
 INTERNATIONAL NNP B-NP O
@@ -1391,6 +1401,8 @@ halftime NN I-NP O
 
 47-47 CD B-ADVP O
 ) ) O O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -1451,6 +1463,8 @@ Gleveckas NNP I-NP I-PER
 Attendance NN B-NP O
 : : O O
 200 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -1603,6 +1617,8 @@ the DT B-NP O
 Moscow NNP I-NP B-LOC
 club NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 BOXING VBG B-VP O
 - : O O
@@ -1880,6 +1896,8 @@ title NN I-NP O
 fight NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SQUASH NNP B-NP O
 - : O O
 HONG NNP B-NP B-MISC
@@ -1980,6 +1998,8 @@ Ireland NNP B-NP B-LOC
 11-15 CD I-NP O
 15-10 NN B-ADVP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -2133,6 +2153,8 @@ Chonbuk NNP B-NP B-ORG
 3 CD I-NP O
 7 CD I-NP O
 0 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 BASEBALL NNP B-NP O
 - : O O
@@ -2294,6 +2316,8 @@ OB NNP B-NP B-ORG
 .409 CD I-NP O
 20 CD I-NP O
 1/2 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 TENNIS NNS B-NP O
 - : O O
@@ -2838,6 +2862,8 @@ leg NN I-NP O
 injury NN I-NP O
 ) ) O O
 
+-DOCSTART- -X- -X- O
+
 BASEBALL NNP B-NP O
 - : O O
 MAJOR NNP B-NP B-MISC
@@ -3170,6 +3196,8 @@ AT NNP I-NP O
 ST NNP I-NP B-LOC
 LOUIS NNP I-NP I-LOC
 
+-DOCSTART- -X- -X- O
+
 BASEBALL NNP B-NP O
 - : O O
 MAJOR NNP B-NP B-MISC
@@ -3261,6 +3289,8 @@ Florida NNP B-NP B-ORG
 ST NNP I-NP B-ORG
 LOUIS NNPS I-NP I-ORG
 9 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 TENNIS NNS B-NP O
 - : O O
@@ -4083,6 +4113,8 @@ razzle-dazzle NN I-NP O
 . . O O
 " " O O
 
+-DOCSTART- -X- -X- O
+
 NFL NNP B-NP B-ORG
 AMERICAN NNP I-NP B-MISC
 FOOTBALL-RANDALL NNP I-NP I-MISC
@@ -4303,6 +4335,8 @@ a DT B-NP O
 broadcaster NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 GOLF NN B-NP O
 - : O O
 LEADING NNP B-NP O
@@ -4447,6 +4481,8 @@ Jurgenson NNP I-NP I-PER
 
 Bryan NNP B-NP B-PER
 Gorman NNP I-NP I-PER
+
+-DOCSTART- -X- -X- O
 
 GOLF NN B-NP O
 - : O O
@@ -4940,6 +4976,8 @@ week NN I-NP O
 off RB B-PRT O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 SILVA NNP B-NP B-PER
@@ -5044,6 +5082,8 @@ the DT B-NP O
 one-match NN I-NP O
 suspension NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 ATHLETICS NNP B-NP O
 - : O O
@@ -5353,6 +5393,8 @@ second JJ B-ADJP O
 in IN B-PP O
 10.94 CD B-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 ATHLETICS NNP B-NP O
 - : O O
@@ -6696,6 +6738,8 @@ Germany NNP B-NP B-LOC
 ) ) O O
 39.93 CD B-NP O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 THREE CD B-NP O
@@ -6853,6 +6897,8 @@ the DT B-NP O
 UEFA NNP I-NP B-MISC
 Cup NNP I-NP I-MISC
 . . O O
+
+-DOCSTART- -X- -X- O
 
 ATHLETICS NNP B-NP O
 - : O O
@@ -7037,6 +7083,8 @@ gesture NN I-NP O
 ? . O O
 " " O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 BARATELLI NNP B-NP B-PER
@@ -7131,6 +7179,8 @@ in IN B-PP O
 the DT B-NP O
 table NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -7300,6 +7350,8 @@ Emiliano NNP B-NP B-PER
 Mondonico NNP I-NP I-PER
 . . O O
 
+-DOCSTART- -X- -X- O
+
 CRICKET NNP B-NP O
 - : O O
 SRI NNP B-NP B-LOC
@@ -7356,6 +7408,8 @@ in IN B-PP O
 45.5 CD B-NP O
 overs NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 CRICKET NNP B-NP O
 - : O O
@@ -7677,6 +7731,8 @@ September NNP B-NP O
 1 CD I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 CRICKET NNP B-NP O
 - : O O
 AUSTRALIA NNP B-NP B-LOC
@@ -7721,6 +7777,8 @@ tournament NN I-NP O
 on IN B-PP O
 Friday NNP B-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 CRICKET NNP B-NP O
 - : O O
@@ -7856,6 +7914,8 @@ Muralitharan NNP I-NP I-PER
 Upul JJ B-NP B-PER
 Chandana NNS I-NP I-PER
 . . O O
+
+-DOCSTART- -X- -X- O
 
 ROMANIA NNP B-NP B-LOC
 COMELF NNP I-NP B-ORG
@@ -8148,6 +8208,8 @@ Newsroom NNP I-NP I-ORG
 40-1 NNP I-NP O
 3120264 CD I-NP O
 
+-DOCSTART- -X- -X- O
+
 POLISH NNP B-NP B-MISC
 NBP NNP I-NP O
 REFRAINS NNS I-NP O
@@ -8189,6 +8251,8 @@ Newsroom NNP I-NP I-ORG
 22 CD I-NP O
 653 CD I-NP O
 9700 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 Canada NNP B-NP B-LOC
 government NN I-NP O
@@ -8352,6 +8416,8 @@ Bureau NNP I-NP I-ORG
 ) ) O O
 235-6745 CD B-ADVP O
 
+-DOCSTART- -X- -X- O
+
 Jones NNP B-NP B-ORG
 Medical NNP I-NP I-ORG
 completes VBZ B-VP O
@@ -8431,6 +8497,8 @@ newsdesk UH B-INTJ O
 , , O O
 312 CD B-NP O
 408-8787 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 NYMEX NN B-NP O
 heating NN I-NP O
@@ -8684,6 +8752,8 @@ Desk NNP I-NP I-ORG
 , , O O
 +1 CD B-NP O
 212-859-1761 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 U.S. NNP B-NP B-LOC
 debt NN I-NP O
@@ -9245,6 +9315,8 @@ at IN B-PP O
 94.33 CD B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Douglas NNP B-NP B-ORG
 & CC I-NP I-ORG
 Lomason NN I-NP I-ORG
@@ -9676,6 +9748,8 @@ and CC O O
 headliners NNS B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 UK NNP B-NP B-LOC
 meals NNS I-NP O
 / SYM O O
@@ -9800,6 +9874,8 @@ Newsroom NNP I-NP I-ORG
 171 CD I-NP O
 542 CD I-NP O
 8062 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 Iraqi JJ B-NP B-MISC
 captors NNS I-NP O
@@ -10032,6 +10108,8 @@ and CC O O
 fake JJ B-NP O
 explosives NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Late JJ B-NP O
 bond NN I-NP O
@@ -10537,6 +10615,8 @@ dollar NN I-NP O
 deals NNS I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Boxing-Bruno NN B-NP B-MISC
 quits VBZ B-VP O
 on IN B-PP O
@@ -10853,6 +10933,8 @@ of IN B-PP O
 punches NNS B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Soccer JJR B-NP O
 - : O O
 McCarthy NNP B-NP B-PER
@@ -10961,6 +11043,8 @@ Newsroom NNP I-NP I-ORG
 1 CD I-NP O
 676 CD I-NP O
 9779 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 Nigerian JJ B-NP B-MISC
 thieves NNS I-NP O
@@ -11104,6 +11188,8 @@ $ $ B-NP O
 naira NN I-NP O
 ) ) O O
 
+-DOCSTART- -X- -X- O
+
 East NNP B-NP B-ORG
 Dries NNPS I-NP I-ORG
 miners NNS I-NP O
@@ -11213,6 +11299,8 @@ newsroom NN I-NP O
 +27-11 CD B-NP O
 482 CD I-NP O
 1003 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 Chad JJ B-NP B-LOC
 government NN I-NP O
@@ -11362,6 +11450,8 @@ university NN B-NP O
 officials NNS I-NP O
 said VBD B-VP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Yeltsin JJ B-NP B-PER
 endorses NNS I-NP O
@@ -11682,6 +11772,8 @@ more RBR B-ADJP O
 work NN B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Lebed JJ B-ADJP B-PER
 , , O O
 Chechens NNP B-NP B-MISC
@@ -11943,6 +12035,8 @@ the DT B-NP O
 talks NNS I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Ruling NNP B-NP O
 Moslem NNP I-NP B-MISC
 party NN I-NP O
@@ -12185,6 +12279,8 @@ ethnic JJ B-NP O
 cleansing VBG I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Belgrade NNP B-NP B-LOC
 airport NN I-NP O
 runway NN I-NP O
@@ -12357,6 +12453,8 @@ newsroom NN I-NP O
 +381 CD B-NP O
 11 CD I-NP O
 2224305 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 Top JJ B-NP O
 Belarus NNP I-NP B-LOC
@@ -12774,6 +12872,8 @@ and CC I-NP O
 Sergei NNP I-NP B-PER
 Naumchik NNP I-NP I-PER
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Tajik NN B-NP B-MISC
 troops NNS I-NP O
@@ -13254,6 +13354,8 @@ he PRP B-NP O
 said VBD B-VP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Polish NNP B-NP B-MISC
 Foreign NNP I-NP O
 Minister NNP I-NP O
@@ -13448,6 +13550,8 @@ in IN B-PP O
 fighting VBG B-VP O
 crime NN B-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Yeltsin JJ B-NP B-PER
 visits NNS I-NP O
@@ -13670,6 +13774,8 @@ from IN B-PP O
 Moscow NNP B-NP B-LOC
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Lebed JJ B-ADJP B-PER
 , , O O
 Chechens NNP B-NP B-MISC
@@ -13762,6 +13868,8 @@ before IN B-PP O
 the DT B-NP O
 talks NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Russian JJ B-NP B-MISC
 judge NN I-NP O
@@ -13894,6 +14002,8 @@ against IN B-PP O
 criminal JJ B-NP O
 attacks NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Cofinec NN B-NP B-ORG
 plunges VBZ B-VP O
@@ -14366,6 +14476,8 @@ newsroom NN I-NP O
 327 CD B-NP O
 4040 CD I-NP O
 
+-DOCSTART- -X- -X- O
+
 Romania NNP B-NP B-LOC
 cen NNS I-NP O
 bank VBP B-VP O
@@ -14504,6 +14616,8 @@ Bucharest NNP B-NP B-ORG
 Newsroom NNP I-NP I-ORG
 40-1 NNP I-NP O
 3120264 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 Potent JJ B-ADJP O
 landmines NNS B-NP O
@@ -14709,6 +14823,8 @@ the DT B-NP O
 landmines NNS I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Assault NN B-NP O
 charges NNS I-NP O
 dropped VBD B-VP O
@@ -14881,6 +14997,8 @@ and CC I-NP O
 logging NN I-NP O
 interests NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Cambodian JJ B-NP B-MISC
 opposition NN I-NP O
@@ -15084,6 +15202,8 @@ for IN B-PP O
 an DT B-NP O
 amnesty NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Far NNP B-NP B-LOC
 East NNP I-NP I-LOC
@@ -15532,6 +15652,8 @@ an DT B-NP O
 ounce NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Tripoli NNP B-NP B-LOC
 decks NNS I-NP O
 out IN B-PP O
@@ -15879,6 +16001,8 @@ and CC O O
 Egyptian NNP B-NP B-MISC
 workers NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Twilight NN B-NP O
 zone NN I-NP O
@@ -16846,6 +16970,8 @@ the DT B-NP O
 week NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Brisk JJ B-NP O
 economic JJ I-NP O
 reports NNS I-NP O
@@ -17722,6 +17848,8 @@ in IN B-PP O
 June NNP B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Mexican JJ B-NP B-MISC
 avocados NNS I-NP O
 not RB B-VP O
@@ -18278,6 +18406,8 @@ available JJ I-NP O
 science NN I-NP O
 . . O O
 " " O O
+
+-DOCSTART- -X- -X- O
 
 U.S. NNP B-NP B-LOC
 Cardinal NNP I-NP O
@@ -18887,6 +19017,8 @@ garment NN I-NP O
 . . O O
 " " O O
 
+-DOCSTART- -X- -X- O
+
 Boatmen NNP B-NP B-ORG
 's POS B-NP I-ORG
 deal NN I-NP O
@@ -19444,6 +19576,8 @@ McDonald NNP B-NP B-ORG
 Co NNP I-NP I-ORG
 . . O O
 
+-DOCSTART- -X- -X- O
+
 U.S. NNP B-NP B-LOC
 tight-lipped JJ B-ADJP O
 on IN B-PP O
@@ -19688,6 +19822,8 @@ on IN B-PP O
 Libya NNP B-NP B-LOC
 . . O O
 
+-DOCSTART- -X- -X- O
+
 U.S. NNP B-NP B-LOC
 Gulf NNP I-NP I-LOC
 rig NN I-NP O
@@ -19821,6 +19957,8 @@ York NNP I-NP I-ORG
 Energy NNP I-NP I-ORG
 Desk NNP I-NP I-ORG
 212-859-1620 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 Dole NNP B-NP B-PER
 team NN I-NP O
@@ -20067,6 +20205,8 @@ Women NNP B-NP I-ORG
 Voters NNPS I-NP I-ORG
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Titanic JJ B-NP B-MISC
 recovery NN I-NP O
 mission NN I-NP O
@@ -20307,6 +20447,8 @@ Thursday NNP B-NP O
 Purcell NNP B-NP B-PER
 said VBD B-VP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Bonn NNP B-NP B-LOC
 appeals NNS I-NP O
@@ -20657,6 +20799,8 @@ for IN B-PP O
 talks NNS B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 France NNP B-NP B-LOC
 expels VBZ B-VP O
 African JJ B-NP B-MISC
@@ -20969,6 +21113,8 @@ told VBD B-VP O
 reporters NNS B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 German JJ B-NP B-MISC
 police NN I-NP O
 probe NN I-NP O
@@ -21095,6 +21241,8 @@ spokesman NN I-NP O
 told VBN B-VP O
 Reuters NNP B-NP B-ORG
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Missing JJ B-NP O
 German JJ I-NP B-MISC
@@ -21346,6 +21494,8 @@ she PRP B-NP O
 added VBD B-VP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Indian JJ B-NP B-MISC
 copper NN I-NP O
 falls NNS I-NP O
@@ -21483,6 +21633,8 @@ Commodities NNP I-NP I-ORG
 +91-22-265 CD I-NP O
 9000 CD I-NP O
 
+-DOCSTART- -X- -X- O
+
 MARTELA NNP B-NP B-ORG
 H1 NNP I-NP O
 PROFIT NNP I-NP O
@@ -21538,6 +21690,8 @@ sales NNS I-NP O
 289.1 CD I-NP O
 vs NNP O O
 256.9 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 Canadian JJ B-NP B-MISC
 bonds NNS I-NP O
@@ -21946,6 +22100,8 @@ e-mail NN B-NP O
 : : O O
 jeffrey.hodgson@reuters.com NN B-NP O
 
+-DOCSTART- -X- -X- O
+
 Aw NNP B-NP O
 Computer NNP I-NP B-ORG
 Systems NNP I-NP I-ORG
@@ -22028,6 +22184,8 @@ York NNP I-NP I-ORG
 Newsdesk NNP I-NP I-ORG
 212-859-1610 NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 IPO NN B-NP O
 FILING NN I-NP O
@@ -22169,6 +22327,8 @@ A DT B-NP O
 N NNP I-NP O
 / SYM O O
 A DT B-NP O
+
+-DOCSTART- -X- -X- O
 
 Syria NNP B-NP B-LOC
 slams NNS I-NP O
@@ -22482,6 +22642,8 @@ a DT B-NP O
 breakthrough NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Egypt NNP B-NP B-LOC
 police NN I-NP O
 detain VB B-VP O
@@ -22621,6 +22783,8 @@ state NN I-NP O
 in IN B-PP O
 its PRP$ B-NP O
 place NN I-NP O
+
+-DOCSTART- -X- -X- O
 
 Israel NNP B-NP B-LOC
 blocks NNS I-NP O
@@ -23064,6 +23228,8 @@ refugee NN I-NP O
 camp NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 PRESALE NNP B-NP O
 - : O O
 Bay NNP B-NP B-ORG
@@ -23273,6 +23439,8 @@ J.J. NNP I-NP B-ORG
 KENNY NNP I-NP I-ORG
 K-SHEETS NNS I-NP O
 : : O O
+
+-DOCSTART- -X- -X- O
 
 Consumer NN B-NP O
 spending NN I-NP O
@@ -23808,6 +23976,8 @@ $ $ B-NP O
 678 CD I-NP O
 billion CD I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 World NNP B-NP O
 Markets NNP I-NP O
@@ -24608,6 +24778,8 @@ at IN B-PP O
 20,553.16 CD B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Pirelli NNP B-NP B-ORG
 cables NNS I-NP O
 look VB B-VP O
@@ -25090,6 +25262,8 @@ in IN B-PP O
 China NNP B-NP B-LOC
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Dutch JJ B-NP B-MISC
 bond NN I-NP O
 futures NNS I-NP O
@@ -25301,6 +25475,8 @@ Fax NNP B-NP O
 20 CD I-NP O
 504 CD I-NP O
 5040 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 OSCE RB O B-ORG
 defends VBZ B-VP O
@@ -25662,6 +25838,8 @@ said VBD B-VP O
 Cotti NNP B-NP B-PER
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Dutch JJ B-NP B-MISC
 say VBP B-VP O
 no DT B-NP O
@@ -25848,6 +26026,8 @@ Fax NN I-NP O
 171 CD I-NP O
 542 CD I-NP O
 5017 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 Armenians NNPS B-NP B-MISC
 , , O O
@@ -26129,6 +26309,8 @@ Russia NNP B-NP B-LOC
 and CC I-NP O
 Finland NNP I-NP B-LOC
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Sombre JJ B-NP O
 mood NN I-NP O
@@ -26824,6 +27006,8 @@ do VB I-VP O
 so RB B-ADVP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Ericsson NNP B-NP B-ORG
 says VBZ B-VP O
 wins VBZ I-VP O
@@ -26942,6 +27126,8 @@ Stockholm NNP I-NP B-LOC
 newsroom NN I-NP O
 +46-8-700 CD I-NP O
 1017 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 HK NNP B-NP B-LOC
 has VBZ B-VP O
@@ -27174,6 +27360,8 @@ newsroom NN I-NP O
 64 CD I-NP O
 4 CD I-NP O
 473-4746 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 PRESS NNS B-NP O
 DIGEST VB B-VP O
@@ -27495,6 +27683,8 @@ last JJ I-NP O
 June NNP I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Jeans NNP B-NP B-ORG
 Mate NNP I-NP I-ORG
 Corp NNP I-NP I-ORG
@@ -27568,6 +27758,8 @@ company NN I-NP O
 name NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Apic NNP B-NP B-ORG
 Yamada NNP I-NP I-ORG
 - : O O
@@ -27638,6 +27830,8 @@ of IN B-PP O
 semiconductor NN B-NP O
 leadframes NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Bootleg VBG B-NP O
 brew NN I-NP O
@@ -27808,6 +28002,8 @@ further JJ I-NP O
 details NNS I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Singapore NNP B-NP B-LOC
 hangs VBZ B-VP O
 Thai NNP B-NP B-MISC
@@ -27946,6 +28142,8 @@ for IN B-PP O
 drug-related JJ B-NP O
 charges NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Arafat NNP B-NP B-PER
 goes VBZ B-VP O
@@ -28127,6 +28325,8 @@ occupation NN I-NP O
 has VBZ B-VP O
 ended VBN I-VP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 U.N. NNP B-NP B-ORG
 Council NNP I-NP I-ORG
@@ -28440,6 +28640,8 @@ al-Laqlaq JJ I-NP I-LOC
 Society NNP I-NP I-LOC
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 REAL NNP B-NP B-ORG
@@ -28744,6 +28946,8 @@ his PRP$ B-NP O
 passport NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 RUGBY NNP B-NP B-MISC
 LEAGUE NNP I-NP I-MISC
 - : O O
@@ -28777,6 +28981,8 @@ Wigan NN B-NP B-ORG
 Bradford NNP I-NP B-ORG
 Bulls NNPS I-NP I-ORG
 36 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -28834,6 +29040,8 @@ Attendance NNP B-NP O
 : : O O
 2,000 CD B-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -28987,6 +29195,8 @@ championship NN I-NP O
 finals NNS I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 IRELAND NNP B-NP B-LOC
@@ -29058,6 +29268,8 @@ Harte NNP I-NP I-PER
 Attendance NN B-NP O
 : : O O
 3,900 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 GOLF NN B-NP O
 - : O O
@@ -29313,6 +29525,8 @@ McAllister NNP I-NP I-PER
 74 CD B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 SLOVAKIA NNP B-NP B-LOC
@@ -29387,6 +29601,8 @@ Attendance NNP B-NP O
 1,445 CD B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 CRICKET NNP B-NP O
 - : O O
 ENGLAND NNP B-NP B-LOC
@@ -29450,6 +29666,8 @@ A. NNP B-NP B-PER
 Hollioake NNP I-NP I-PER
 4-23 CD I-NP O
 ) ) O O
+
+-DOCSTART- -X- -X- O
 
 CYCLING VBG B-VP O
 - : O O
@@ -29671,6 +29889,8 @@ Andersson NNP I-NP B-PER
 10. CD B-NP O
 Skibby NNP I-NP B-PER
 1:45 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 CRICKET NNP B-NP O
 - : O O
@@ -29970,6 +30190,8 @@ Croft NNP B-NP B-PER
 Hollioake NNP B-NP B-PER
 6.5-1-23-4 NNP I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 CYCLING VBG B-VP O
 - : O O
@@ -30474,6 +30696,8 @@ Mazeikyte NNP B-NP B-PER
 Lithuania NNP B-NP B-LOC
 ) ) O O
 
+-DOCSTART- -X- -X- O
+
 CRICKET NNP B-NP O
 - : O O
 PAKISTAN NNP B-NP B-LOC
@@ -30647,6 +30871,8 @@ Younis NNP I-NP I-PER
 , , O O
 Ata-ur-Rehman NNP B-NP B-PER
 . . O O
+
+-DOCSTART- -X- -X- O
 
 BASEBALL NNP B-NP O
 - : O O
@@ -31547,6 +31773,8 @@ two-run JJ I-NP O
 double JJ I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 CRICKET NNP B-NP O
 - : O O
 ESSEX NNP B-NP B-ORG
@@ -31785,6 +32013,8 @@ he PRP B-NP O
 said VBD B-VP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 GOLF NN B-NP O
 - : O O
 LEADING NNP B-NP O
@@ -31963,6 +32193,8 @@ Paul NNP I-NP B-PER
 Broadhurst NNP I-NP I-PER
 176,780 CD B-NP O
 
+-DOCSTART- -X- -X- O
+
 RUGBY NNP B-NP B-ORG
 UNION NN I-NP I-ORG
 - : O O
@@ -32088,6 +32320,8 @@ Stirling NNP I-NP B-ORG
 County NNP I-NP O
 10 CD I-NP O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 WALES NNP B-NP B-LOC
@@ -32161,6 +32395,8 @@ Attendance NNP B-NP O
 : : O O
 15,150 CD B-NP O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 UKRAINE NNP B-NP B-LOC
@@ -32210,6 +32446,8 @@ minute NN I-NP O
 Attendance NNP B-NP O
 : : O O
 9,358 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 RUGBY NNP B-NP B-ORG
 UNION NN I-NP I-ORG
@@ -32427,6 +32665,8 @@ Wasps NNS B-NP B-ORG
 and CC I-NP O
 Bristol NNP I-NP B-ORG
 . . O O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -32757,6 +32997,8 @@ County NNP I-NP I-ORG
 3 CD I-NP O
 7 CD I-NP O
 0 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -33468,6 +33710,8 @@ Mansfield NNP B-NP B-ORG
 6 CD I-NP O
 2 CD I-NP O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 SCOTTISH NNP B-NP B-MISC
@@ -33584,6 +33828,8 @@ Park NNP I-NP I-ORG
 1 CD I-NP O
 Forfar NNP I-NP B-ORG
 4 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -33790,6 +34036,8 @@ Wigan NN B-NP B-ORG
 4 CD I-NP O
 Chester NNP I-NP B-ORG
 2 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 CRICKET NNP B-NP O
 - : O O
@@ -34090,6 +34338,8 @@ and CC I-NP O
 218-9 CD I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 MOTOR NNP B-NP O
 RACING NNP I-NP O
 - : O O
@@ -34273,6 +34523,8 @@ Honda NNP B-NP I-ORG
 , , O O
 54.774 CD B-NP O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 CANADA NNP B-NP B-LOC
@@ -34350,6 +34602,8 @@ Valdes NNPS I-NP I-PER
 Attendance NNP B-NP O
 : : O O
 9,402 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 RUGBY NNP B-NP B-ORG
 UNION NN I-NP I-ORG
@@ -35079,6 +35333,8 @@ Craig NNP I-NP B-PER
 Dowd NNP I-NP I-PER
 . . O O
 
+-DOCSTART- -X- -X- O
+
 RUGBY NNP B-NP B-ORG
 UNION NN I-NP I-ORG
 - : O O
@@ -35195,6 +35451,8 @@ series NN I-NP O
 2-1 CD I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 MAURITANIA NNP B-NP B-LOC
@@ -35306,6 +35564,8 @@ tie NN I-NP O
 4-1 CD I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 MAURITANIA NNP B-NP B-LOC
@@ -35348,6 +35608,8 @@ won VBD B-VP O
 on IN B-PP O
 aggregate NN B-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -35733,6 +35995,8 @@ BJ NNP B-NP I-ORG
 10 CD I-NP O
 1 CD I-NP O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 INCE NNP B-NP B-PER
@@ -35879,6 +36143,8 @@ on IN B-PP O
 Sunday NNP B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 BASKETBALL NNP B-NP O
 - : O O
 TROFEJ NNP B-NP B-MISC
@@ -35941,6 +36207,8 @@ Yugoslavia NNP B-NP B-LOC
 ( ( O O
 42-41 CD B-NP O
 ) ) O O
+
+-DOCSTART- -X- -X- O
 
 BASKETBALLSOCCER NNP B-NP O
 - : O O
@@ -36005,6 +36273,8 @@ Yugoslavia NNP B-NP B-LOC
 42-41 CD B-NP O
 ) ) O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 ROMANIA NNP B-NP B-LOC
@@ -36068,6 +36338,8 @@ Attendence NN B-NP O
 : : O O
 9,000 CD B-NP O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 ARMENIA NNP B-NP B-LOC
@@ -36105,6 +36377,8 @@ Saturday NNP B-NP O
 Attendance NN B-NP O
 : : O O
 5,000 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -36155,6 +36429,8 @@ Attendance NN B-NP O
 : : O O
 20,000 CD B-NP O
 
+-DOCSTART- -X- -X- O
+
 BASKETBALL NNP B-NP O
 - : O O
 BENETTON NNP B-NP B-ORG
@@ -36194,6 +36470,8 @@ tournament NN I-NP O
 on IN B-PP O
 Saturday NNP B-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -36245,6 +36523,8 @@ Attendance NN B-NP O
 : : O O
 300 CD B-NP O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 BELARUS NNP B-NP B-LOC
@@ -36291,6 +36571,8 @@ Makovsky NNP I-NP I-PER
 Attendance NN B-NP O
 : : O O
 6,000 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -36344,6 +36626,8 @@ Eadie NNP I-NP I-PER
 Attendance NN B-NP O
 : : O O
 850 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 SQUASH NNP B-NP O
 - : O O
@@ -36826,6 +37110,8 @@ together RB B-ADVP O
 . . O O
 " " O O
 
+-DOCSTART- -X- -X- O
+
 SQUASH NNP B-NP O
 - : O O
 HONG NNP B-NP B-MISC
@@ -36891,6 +37177,8 @@ Scotland NNP B-NP B-LOC
 8-15 JJ I-NP O
 15-10 JJ I-NP O
 15-4 JJ I-NP O
+
+-DOCSTART- -X- -X- O
 
 GOLF NN B-NP O
 - : O O
@@ -37456,6 +37744,8 @@ the DT B-NP O
 tournament NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 TENNIS NNS B-NP O
 - : O O
 SPAIN NNP B-NP B-LOC
@@ -37897,6 +38187,8 @@ said VBD B-VP O
 King NNP B-NP B-PER
 . . O O
 
+-DOCSTART- -X- -X- O
+
 TENNIS NNS B-NP O
 - : O O
 SATURDAY NNP B-NP O
@@ -38010,6 +38302,8 @@ Ecuador NNP B-NP B-LOC
 6-4 CD I-NP O
 6-2 CD I-NP O
 
+-DOCSTART- -X- -X- O
+
 TENNIS NNS B-NP O
 - : O O
 DRAW NN B-NP O
@@ -38119,6 +38413,8 @@ at IN B-PP O
 South NNP B-NP B-LOC
 Africa NNP I-NP I-LOC
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 U.S. NNP B-NP B-LOC
@@ -38187,6 +38483,8 @@ Lazo NNP I-NP I-PER
 Attendance NN B-NP O
 - : O O
 18,661 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 BASEBALL NNP B-NP O
 - : O O
@@ -38525,6 +38823,8 @@ AT NNP I-NP O
 ST NNP I-NP B-LOC
 LOUIS NNP I-NP I-LOC
 
+-DOCSTART- -X- -X- O
+
 BASEBALL NNP B-NP O
 - : O O
 MAJOR NNP B-NP B-MISC
@@ -38658,6 +38958,8 @@ LOUIS VBZ B-VP I-ORG
 7 CD B-NP O
 Colorado NNP I-NP B-ORG
 4 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 BASEBALL NNP B-NP O
 - : O O
@@ -39668,6 +39970,8 @@ straight JJ I-NP O
 win NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 TENNIS NNS B-NP O
 - : O O
 EDBERG NNP B-NP B-PER
@@ -40197,6 +40501,8 @@ tonight NN B-NP O
 . . O O
 " " O O
 
+-DOCSTART- -X- -X- O
+
 BOXING VBG B-VP O
 - : O O
 PRINCE NNP B-NP O
@@ -40239,6 +40545,8 @@ the DT B-NP O
 11th JJ I-NP O
 round NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -40652,6 +40960,8 @@ John NNP B-NP B-PER
 Collins NNP I-NP I-PER
 . . O O
 
+-DOCSTART- -X- -X- O
+
 BOXING VBG B-VP O
 - : O O
 JOHNSON NNP B-NP B-PER
@@ -40688,6 +40998,8 @@ Guzman NNP I-NP I-PER
 on IN B-PP O
 Saturday NNP B-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -41176,6 +41488,8 @@ Pelaez NNP I-NP I-PER
 ) ) O O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 FRANCE NNP B-NP B-LOC
@@ -41224,6 +41538,8 @@ Djorkaeff NNP I-NP I-PER
 Attendance NN B-NP O
 : : O O
 18,000 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -41837,6 +42153,8 @@ and CC I-NP O
 Italy NNP I-NP B-LOC
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 SUMMARY NNP B-NP O
@@ -41890,6 +42208,8 @@ Attendancce NNP B-NP O
 35,000 CD I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 RESULT NNP B-NP O
@@ -41922,6 +42242,8 @@ Coruna NNP I-NP I-ORG
 Real JJ I-NP B-ORG
 Madrid NNP I-NP I-ORG
 1 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -41989,6 +42311,8 @@ Attendance NN B-NP O
 : : O O
 30,000 CD B-NP O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 AUSTRIA NNP B-NP B-LOC
@@ -42026,6 +42350,8 @@ Saturday NNP B-NP O
 Attendance NNP B-NP O
 : : O O
 29,500 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 BOXING VBG B-VP O
 - : O O
@@ -42184,6 +42510,8 @@ the DT B-NP O
 distance NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 DUTCH VB B-VP B-MISC
@@ -42253,6 +42581,8 @@ Goncalves NNPS I-NP I-PER
 55th JJ B-NP O
 ) ) O O
 
+-DOCSTART- -X- -X- O
+
 BOXING VBG B-VP O
 - : O O
 MILLER NN B-NP B-PER
@@ -42291,6 +42621,8 @@ bout NN I-NP O
 on IN B-PP O
 Saturday NNP B-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 HORSE NNP B-NP O
 RACING NNP I-NP O
@@ -42395,6 +42727,8 @@ owner NN I-NP O
 : : O O
 $ $ B-NP O
 233,600 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -42572,6 +42906,8 @@ Euro NNP B-NP B-MISC
 96 CD I-NP I-MISC
 . . O O
 
+-DOCSTART- -X- -X- O
+
 SOCCER NN B-NP O
 - : O O
 GERMAN NNP B-NP B-MISC
@@ -42618,6 +42954,8 @@ after IN B-PP O
 extra JJ B-NP O
 time NN I-NP O
 ) ) O O
+
+-DOCSTART- -X- -X- O
 
 SOCCER NN B-NP O
 - : O O
@@ -42678,6 +43016,8 @@ Gleveckas NNP I-NP I-PER
 Attendence NN B-NP O
 : : O O
 200 CD B-NP O
+
+-DOCSTART- -X- -X- O
 
 Paper NN B-NP O
 says VBZ B-VP O
@@ -42951,6 +43291,8 @@ husband NN I-NP O
 's POS B-NP O
 schedule NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Reuters NNP B-NP B-ORG
 historical JJ I-NP O
@@ -43668,6 +44010,8 @@ a DT I-NP O
 century NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Escaped VBN B-VP O
 British JJ B-NP B-MISC
 paedophile NN I-NP O
@@ -43855,6 +44199,8 @@ on IN B-PP O
 the DT B-NP O
 problem NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Scottish NNP B-NP B-ORG
 Labour NNP I-NP I-ORG
@@ -44056,6 +44402,8 @@ National NNP I-NP I-ORG
 Party NNP I-NP I-ORG
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Britain NNP B-NP B-LOC
 condemns VBZ B-VP O
 Iraq NNP B-NP B-LOC
@@ -44230,6 +44578,8 @@ any DT B-NP O
 further JJ I-NP O
 information NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Seven CD B-NP O
 Iraqis NNPS I-NP B-MISC
@@ -44437,6 +44787,8 @@ and CC O O
 fake JJ B-NP O
 explosives NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Opposition NN B-NP O
 group NN I-NP O
@@ -44687,6 +45039,8 @@ weeks NNS I-NP O
 ago RB B-ADVP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Two CD B-NP O
 die VBP B-VP O
 in IN B-PP O
@@ -44789,6 +45143,8 @@ expected VBN I-VP O
 to TO I-VP O
 win VB I-VP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Baseball-Results NNS B-NP O
 of IN B-PP O
@@ -44909,6 +45265,8 @@ OB NNP B-NP B-ORG
 62 CD I-NP O
 .414 CD I-NP O
 20 CD I-NP O
+
+-DOCSTART- -X- -X- O
 
 S. NNP B-NP B-MISC
 African NNP I-NP I-MISC
@@ -45181,6 +45539,8 @@ Coloureds NNPS I-NP O
 speak VB B-VP O
 Afrikaans NNS B-NP B-MISC
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Rwandan JJ B-NP B-MISC
 refugee NN I-NP O
@@ -45523,6 +45883,8 @@ by IN B-PP O
 Hutus NNP B-NP B-MISC
 . . O O
 
+-DOCSTART- -X- -X- O
+
 NATO NNP B-NP B-ORG
 monitors VBZ B-VP O
 Moslem NNP B-NP B-MISC
@@ -45743,6 +46105,8 @@ helicopters NNS I-NP O
 flew VBD B-VP O
 overhead RB B-ADVP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Chechens NNS B-NP B-MISC
 exuberant JJ B-ADJP O
@@ -46342,6 +46706,8 @@ war NN I-NP O
 . . O O
 " " O O
 
+-DOCSTART- -X- -X- O
+
 Polish JJ B-NP B-MISC
 group NN I-NP O
 to TO B-VP O
@@ -46787,6 +47153,8 @@ Barker NNP I-NP I-PER
 653 CD I-NP O
 9700 CD I-NP O
 
+-DOCSTART- -X- -X- O
+
 Three CD B-NP O
 Russian JJ I-NP B-MISC
 soldiers NNS I-NP O
@@ -46892,6 +47260,8 @@ arms NNS I-NP O
 is VBZ B-VP O
 growing VBG I-VP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Cuban JJ B-NP B-MISC
 novelist NN I-NP O
@@ -47190,6 +47560,8 @@ he PRP B-NP O
 said VBD B-VP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 U.N. NNP B-NP B-ORG
 Ambassador NNP I-NP O
 Albright NNP I-NP B-PER
@@ -47353,6 +47725,8 @@ Honduras NNP B-NP B-LOC
 and CC I-NP O
 Guatemala NNP I-NP B-LOC
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Mexican JJ B-NP B-MISC
 army NN I-NP O
@@ -47537,6 +47911,8 @@ wounding VBG B-VP O
 about RB B-NP O
 20 CD I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 China NNP B-NP B-LOC
 said VBD B-VP O
@@ -47920,6 +48296,8 @@ Xiao NNP B-NP B-PER
 said VBD B-VP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Manila NNP B-NP B-LOC
 hails VBZ B-VP O
 Indonesia NNP B-NP B-LOC
@@ -48091,6 +48469,8 @@ of IN B-PP O
 a DT B-NP O
 century NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Burma NNP B-NP B-LOC
 's POS B-NP O
@@ -48803,6 +49183,8 @@ Burma NNP B-NP B-LOC
 . . I-NP O
 " " O O
 
+-DOCSTART- -X- -X- O
+
 Dow NNP B-NP B-ORG
 Chemical NNP I-NP I-ORG
 in IN B-PP O
@@ -48950,6 +49332,8 @@ no DT B-NP O
 further JJ I-NP O
 details NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 N. NNP B-NP B-LOC
 Korea NNP I-NP I-LOC
@@ -49180,6 +49564,8 @@ than IN I-NP O
 three CD I-NP O
 decades NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Chinese JJ B-NP B-MISC
 police NN I-NP O
@@ -49497,6 +49883,8 @@ have VBP B-VP O
 said VBN I-VP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 China NNP B-NP B-LOC
 police NN I-NP O
 detains NNS I-NP O
@@ -49694,6 +50082,8 @@ of IN B-PP O
 life NN B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Hong NNP B-NP B-LOC
 Kong NNP I-NP I-LOC
 jails NNS I-NP O
@@ -49852,6 +50242,8 @@ under IN B-PP O
 his PRP$ B-NP O
 mattress NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 China NN B-NP B-LOC
 cities NNS I-NP O
@@ -50022,6 +50414,8 @@ no DT B-NP O
 further JJ I-NP O
 details NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Iraqi JJ B-NP B-MISC
 Kurds NNPS I-NP I-MISC
@@ -50312,6 +50706,8 @@ from IN B-PP O
 Baghdad NNP B-NP B-LOC
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Ceasefire JJ B-NP O
 monitors NNS I-NP O
 to TO B-VP O
@@ -50560,6 +50956,8 @@ the DT B-NP O
 area NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 KPD NNP B-NP B-ORG
 confirms VBZ B-VP O
 Iraqi JJ B-NP B-MISC
@@ -50660,6 +51058,8 @@ told VBD B-VP O
 Reuters NNP B-NP B-ORG
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Fire NNP B-NP O
 destroys VBZ B-VP O
 restaurant NN B-NP O
@@ -50744,6 +51144,8 @@ no DT B-NP O
 immediate JJ I-NP O
 comment NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Iraq NNP B-NP B-LOC
 's POS B-NP O
@@ -50985,6 +51387,8 @@ KDP NNP B-NP B-ORG
 flags NNS I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 U.N. NNP B-NP B-ORG
 denies VBZ B-VP O
 reports NNS B-NP O
@@ -51086,6 +51490,8 @@ official NN I-NP O
 told VBN B-VP O
 Reuters NNP B-NP B-ORG
 . . O O
+
+-DOCSTART- -X- -X- O
 
 PRESS NNS B-NP O
 DIGEST VB B-VP O
@@ -51213,6 +51619,8 @@ $ $ B-NP O
 0.96 CD B-NP O
 dinar NN I-NP O
 ) ) O O
+
+-DOCSTART- -X- -X- O
 
 Automakers NNS B-NP O
 , , O O
@@ -51597,6 +52005,8 @@ message NN I-NP O
 . . O O
 " " O O
 
+-DOCSTART- -X- -X- O
+
 Two CD B-NP O
 die VBP B-VP O
 as IN B-PP O
@@ -51760,6 +52170,8 @@ other JJ I-NP O
 injuries NNS I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Car NN B-NP O
 kills VBZ B-VP O
 two CD B-NP O
@@ -51911,6 +52323,8 @@ by IN B-PP O
 Dallas NNP B-NP B-LOC
 youths NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 U.S. NNP B-NP B-LOC
 warplanes VBZ B-VP O
@@ -52420,6 +52834,8 @@ of IN B-PP O
 20 CD B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Two CD B-NP O
 missing JJ I-NP O
 Belgian JJ I-NP B-MISC
@@ -52575,6 +52991,8 @@ past JJ I-NP O
 two CD I-NP O
 weeks NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Algeria NN B-NP B-LOC
 restaurant NN I-NP O
@@ -52813,6 +53231,8 @@ a DT B-NP O
 commanding JJ I-NP O
 lead NN I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Iran NNP B-NP B-LOC
 agents NNS I-NP O
@@ -53205,6 +53625,8 @@ hurt VB I-VP O
 relations NNS B-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Italy NNP B-NP B-LOC
 's POS B-NP O
 Dini NNP I-NP B-PER
@@ -53465,6 +53887,8 @@ army NN I-NP O
 coup NN I-NP O
 . . O O
 
+-DOCSTART- -X- -X- O
+
 Nato NNP B-NP O
 declines VBZ B-VP O
 comment NN B-NP O
@@ -53546,6 +53970,8 @@ in IN B-PP O
 northern JJ B-NP O
 Iraq NNP I-NP B-LOC
 . . O O
+
+-DOCSTART- -X- -X- O
 
 More RBR B-ADJP O
 automatic JJ I-ADJP O
@@ -53649,6 +54075,8 @@ Fal NNP I-NP B-MISC
 automatic JJ I-NP O
 weapons NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 No DT B-NP O
 trace NN I-NP O
@@ -53828,6 +54256,8 @@ past JJ I-NP O
 two CD I-NP O
 weeks NNS I-NP O
 . . O O
+
+-DOCSTART- -X- -X- O
 
 Controversial NNP B-NP O
 IRA NNP I-NP B-ORG
@@ -54419,6 +54849,8 @@ today NN B-NP O
 . . O O
 " " O O
 
+-DOCSTART- -X- -X- O
+
 Dhaka NNP B-NP B-LOC
 stocks NNS I-NP O
 seen VBN B-VP O
@@ -54609,4 +55041,3 @@ Thursday NNP B-NP O
 Dhaka NNP B-NP B-ORG
 Newsroom NNP I-NP I-ORG
 880-2-506363 CD I-NP O
-
