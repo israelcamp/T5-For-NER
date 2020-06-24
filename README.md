@@ -133,7 +133,3 @@ seed (int): Seed used when deterministic
 └── setup.py <- Install package with pip install -e .
 
 ```
-
-```
-
-```
