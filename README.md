@@ -119,8 +119,8 @@ seed (int): Seed used when deterministic
 | | ├── make_conll2003.py
 │ │ └── make_harem.py
 │ │
-│ ├── input <- Scripts to turn into right format for the models
-| | ├── example.py <- Auxliary file to hold the data samples
+│ ├── input <- Scripts to turn data into right format for the models
+| | ├── example.py <- Auxiliary file to hold the data samples
 | | ├── feature.py <- Scripts for tokenization
 │ │ └── dataset.py <- Pytorch Dataset class to feed the models
 │ │
