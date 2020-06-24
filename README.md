@@ -98,3 +98,42 @@ seed (int): Seed used when deterministic
 
 
 ```
+
+## Project structure
+
+```
+├── LICENSE
+├── README.md <- The top-level README for developers using this project.
+├── data
+│ ├── conll2003 <- Data from CoNLL 2003 dataset.
+│ └── harem <- Data from Harem Dataset.
+│
+├── notebooks <- Jupyter notebooks.
+│
+├── env.yml <- File to generate the conda enviroment
+│
+├── src <- Source code for use in this project.
+│ ├── __init__.py <- Makes src a Python module
+│ │
+│ ├── data <- Scripts to process data
+| | ├── make_conll2003.py
+│ │ └── make_harem.py
+│ │
+│ ├── input <- Scripts to turn into right format for the models
+| | ├── example.py <- Auxliary file to hold the data samples
+| | ├── feature.py <- Scripts for tokenization
+│ │ └── dataset.py <- Pytorch Dataset class to feed the models
+│ │
+│ ├── models <- Modeling models scripts
+│   ├── modeling_utils.py <- Base configuration for all models
+│   ├── modeling_ner.py <- Modeling the NER task on Pytorch Lightning
+|   ├── modeling_t5ner.py <- Modeling T5 for the NER task
+│   └── modeling_conll2003.py <- Modeling CoNLL2003 data to be used with the models
+|
+└── setup.py <- Install package with pip install -e .
+
+```
+
+```
+
+```
