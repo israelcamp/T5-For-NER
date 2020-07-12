@@ -13,6 +13,7 @@ from .modeling_t5ner import T5ForNER
 
 
 class HaremBase:
+
     @property
     def entities_tokens(self) -> List[str]:
         return [
@@ -95,6 +96,10 @@ class HaremBase:
 
                 target_span_words = [
                     w for w in target_span_words if w in example.target_words]
+
+                if target_span_words[0] in possible_endings:
+                    target_span_words = target_span_words[1:]
+
                 source_span_words = [
                     w for w in target_span_words if w in example.source_words]
 
