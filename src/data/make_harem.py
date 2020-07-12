@@ -1,10 +1,18 @@
 import os
 import random
 
-from .make_conll2003 import examples_from_file
+from .make_conll2003 import convert_text_to_example, read_txt
 
 
-def get_example_sets(folderpath: str, split=0.8, seed=0, ** kwargs):
+def examples_from_file(filepath: str, split_examples_by='\n\n', strip=True, **kwargs):
+    file_text = read_txt(filepath)
+    text_examples = file_text.split(split_examples_by)
+    if strip:
+        text_examples = text_examples[1:]  # remove first and last
+    return [convert_text_to_example(te, **kwargs) for te in text_examples]
+
+
+def get_example_sets(folderpath: str, split=0.9, seed=0, ** kwargs):
 
     files = ['primeiroHarem.txt', ]
 

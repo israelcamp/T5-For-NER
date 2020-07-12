@@ -107,6 +107,10 @@ class ConfigBase:
     def remove_accents(self,) -> bool:
         return self.get_value_or_default_hparam('remove_accents', False)
 
+    @property
+    def stride(self,) -> bool:
+        return self.get_value_or_default_hparam('stride', 64)
+
     @staticmethod
     def _ifnone(value, default):
         return value if value is not None else default

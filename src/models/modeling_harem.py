@@ -20,7 +20,7 @@ class HaremBase:
             '<PER>',
             '<ORG>',
             '<LOC>',
-            '<TEMP>',
+            '<TMP>',
             '<VAL>',
             '<Ent>'
         ]
@@ -28,24 +28,24 @@ class HaremBase:
     @property
     def labels2words(self,):
         return {
-            'O': '[Other]',
-            'PER': '[Person]',
+            'O': '[Outro]',
+            'PER': '[Pessoa]',
             'LOC': '[Local]',
-            'TEMP': '[Time]',
-            'VAL': '[Value]',
-            'ORG': '[Organization]',
+            'TMP': '[Tempo]',
+            'VAL': '[Valor]',
+            'ORG': '[Organização]',
             'Ent': '[Ent]'
         }
 
     @property
     def entities2tokens(self,):
         return{
-            '[Other]': '<O>',
-            '[Person]': '<PER>',
+            '[Outro]': '<O>',
+            '[Pessoa]': '<PER>',
             '[Local]': '<LOC>',
-            '[Time]': '<TEMP>',
-            '[Value]': '<VAL>',
-            '[Organization]': '<ORG>',
+            '[Tempo]': '<TMP>',
+            '[Valor]': '<VAL>',
+            '[Organização]': '<ORG>',
             '[Ent]': '<Ent>'
         }
 
@@ -63,6 +63,58 @@ class HaremBase:
         valid_dataset = T5NERDataset(features['valid'])
         test_dataset = T5NERDataset(features['test'])
         return train_dataset, valid_dataset, test_dataset
+
+    def convert_examples_to_span(self, examples):
+        max_length = self.max_length - 1
+        # TODO: fix for mode tokens
+        possible_endings = list(self.labels2words.values())
+
+        span_examples = []
+
+        for example in examples:
+            target = example.target
+            target_tokens = self.tokenizer.tokenize(target)
+            n_spans = len(target_tokens) // self.stride
+
+            for i in range(n_spans):
+                start = self.stride * i
+                end = min(self.stride * i + max_length, len(target_tokens))
+
+                span_tokens = target_tokens[start:end]
+                target_span_words = self.tokenizer.convert_tokens_to_string(
+                    span_tokens).split(' ')
+
+                last_ent_index = [i for i, w in enumerate(
+                    target_span_words) if w in possible_endings]
+
+                if len(last_ent_index):
+                    last_ent_index = last_ent_index[-1]
+                    target_span_words = target_span_words[:last_ent_index+1]
+                else:
+                    target_span_words = target_span_words[:-1] + ['[Outro]']
+
+                target_span_words = [
+                    w for w in target_span_words if w in example.target_words]
+                source_span_words = [
+                    w for w in target_span_words if w in example.source_words]
+
+                span_examples.append(InputExample(
+                    source_span_words, target_span_words))
+
+        return span_examples
+
+    def get_features(self, examples):
+        span_examples = {
+            setname: self.convert_examples_to_span(exs) for setname, exs in examples.items()
+        }
+
+        kwargs = {
+            'max_length': self.max_length,
+            'end_token': self.end_token,
+            'target_as_source': self.target_as_source,
+            'prefix': 'Reconhecer Entidades:'
+        }
+        return convert_example_sets_to_features_sets(span_examples, self.tokenizer, **kwargs)
 
 
 class T5ForHarem(HaremBase, T5ForNER):
