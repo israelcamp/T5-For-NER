@@ -1,7 +1,66 @@
 import os
 import random
 
-from .make_conll2003 import convert_text_to_example, read_txt
+import unidecode
+
+from ..utils import read_txt
+from ..input.example import InputExample
+
+
+def convert_text_to_example(text,
+                            labels2words={},
+                            split_line_by='\n',
+                            split_row_by=' ',
+                            merge_O=False,
+                            remove_accents=False):
+
+    words, labels = [], []
+    for row in text.split(split_line_by):
+        ws = row.split(split_row_by)
+        w = ws[0]
+        if remove_accents:
+            w = unidecode.unidecode(w)
+        words.append(w)
+        labels.append(ws[-1])
+
+    source_words = []
+    target_words = []
+    word_labels = labels.copy()
+
+    i = 0
+    while len(source_words) < len(words):
+        w = words[i]
+        l = labels[i]
+
+        if l == 'O':
+            if merge_O:
+                j = i + 1
+                while j < len(labels) and labels[j] == 'O':
+                    j += 1
+                # adds the span
+                source_words.extend(words[i:j])
+                entity = labels2words.get(l, f'<{l}>')
+                target_words.extend(words[i:j] + [entity])
+                i = j
+            else:
+                source_words.append(w)
+                entity = labels2words.get(l, f'<{l}>')
+                target_words.extend([w, entity])
+                i += 1
+                continue
+        else:  # found a B-ENT
+            j = i+1
+            ent_label = labels[i].split('-')[-1]
+            while j < len(labels) and labels[j] == f'I-{ent_label}':
+                j += 1
+            # adds the span
+            source_words.extend(words[i:j])
+
+            entity = labels2words.get(ent_label, f'<{ent_label}>')
+            target_words.extend(words[i:j] + [entity])
+            i = j
+
+    return InputExample(source_words, target_words, word_labels)
 
 
 def examples_from_file(filepath: str, split_examples_by='\n\n', strip=True, **kwargs):

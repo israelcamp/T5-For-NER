@@ -50,6 +50,14 @@ class HaremBase:
             '[Ent]': '<Ent>'
         }
 
+    def _construct_examples_kwargs(self,):
+        kwargs = {}
+        kwargs['merge_O'] = self.merge_O
+        kwargs['remove_accents'] = self.remove_accents
+        if self.labels_mode == 'words':
+            kwargs['labels2words'] = self.labels2words
+        return kwargs
+
     def get_examples(self,) -> Union[List[InputExample], Dict[str, List[InputExample]]]:
         kwargs = self._construct_examples_kwargs()
         return get_example_sets(self.datapath, **kwargs)
@@ -116,7 +124,6 @@ class HaremBase:
         kwargs = {
             'max_length': self.max_length,
             'end_token': self.end_token,
-            'target_as_source': self.target_as_source,
             'prefix': 'Reconhecer Entidades:'
         }
         return convert_example_sets_to_features_sets(span_examples, self.tokenizer, **kwargs)
