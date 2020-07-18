@@ -3,7 +3,7 @@ from typing import List
 
 class InputExample:
 
-    def __init__(self, source_words: List[str], target_words: List[str], word_labels: List[str]):
+    def __init__(self, source_words: List[str], target_words: List[str], word_labels: List[str] = None):
         self.source_words = source_words
         self.target_words = target_words
         self.word_labels = word_labels

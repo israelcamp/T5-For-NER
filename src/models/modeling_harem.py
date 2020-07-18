@@ -1,5 +1,6 @@
 from typing import Dict, List, Union, Tuple
 
+
 import torch
 from torch import nn
 from torch.utils.data import Dataset
@@ -7,7 +8,7 @@ import transformers
 
 from ..input.dataset import T5NERDataset
 from ..input.example import InputExample
-from ..input.feature import convert_example_sets_to_features_sets, InputFeature
+from ..input.feature import InputSpanFeatures, convert_example_to_spanfeatures
 from ..data.make_harem import get_example_sets
 from .modeling_t5ner import T5ForNER
 
@@ -67,7 +68,7 @@ class HaremBase:
         tokenizer.add_tokens(self.entities_tokens)
         return tokenizer
 
-    def get_datasets(self, features: Union[List[InputFeature], Dict[str, List[InputFeature]]]) -> Tuple[Dataset]:
+    def get_datasets(self, features: Union[List[InputSpanFeatures], Dict[str, List[InputSpanFeatures]]]) -> Tuple[Dataset]:
         train_dataset = T5NERDataset(features['train'])
         valid_dataset = T5NERDataset(features['valid'])
         test_dataset = T5NERDataset(features['test'])
@@ -116,17 +117,26 @@ class HaremBase:
 
         return span_examples
 
+    def convert_examples_to_span_features(self, examples):
+        features = []
+        for ex in examples:
+            feats = convert_example_to_spanfeatures(
+                ex, self.max_length, self.tokenizer, self.stride, self.labels2words, self.target_max_length)
+            features.extend(feats)
+        return features
+
     def get_features(self, examples):
-        span_examples = {
-            setname: self.convert_examples_to_span(exs) for setname, exs in examples.items()
+        feature_sets = {
+            setname: self.convert_examples_to_span_features(exs) for setname, exs in examples.items()
         }
 
-        kwargs = {
-            'max_length': self.max_length,
-            'end_token': self.end_token,
-            'prefix': 'Reconhecer Entidades:'
-        }
-        return convert_example_sets_to_features_sets(span_examples, self.tokenizer, **kwargs)
+        return feature_sets
+        # kwargs = {
+        #     'max_length': self.max_length,
+        #     'end_token': self.end_token,
+        #     'prefix': 'Reconhecer Entidades:'
+        # }
+        # return convert_example_sets_to_features_sets(span_examples, self.tokenizer, **kwargs)
 
 
 class T5ForHarem(HaremBase, T5ForNER):
