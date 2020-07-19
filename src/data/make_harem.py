@@ -18,10 +18,21 @@ def convert_text_to_example(text,
     for row in text.split(split_line_by):
         ws = row.split(split_row_by)
         w = ws[0]
+        l = ws[-1]
         if remove_accents:
             w = unidecode.unidecode(w)
-        words.append(w)
-        labels.append(ws[-1])
+
+        # cleaning the dot and comma
+        w = w.replace('.', ' .').replace(',', ' ,').split(' ')
+        for i, wi in enumerate(w):
+            words.append(wi)
+            if i > 0 and l != 'O':
+                labels.append(f'I-{l.split("-")[-1]}')
+            else:
+                labels.append(l)
+
+        # words.append(w)
+        # labels.append(ws[-1])
 
     source_words = []
     target_words = []
