@@ -249,14 +249,6 @@ def convert_example_to_spanfeatures(example, max_seq_length, tokenizer, doc_stri
         # tokens are attended to.
         attention_mask = [1] * len(input_ids)
 
-        # Zero-pad up to the sequence length.
-        while len(input_ids) < max_seq_length:
-            input_ids.append(0)
-            attention_mask.append(0)
-
-        assert len(input_ids) == max_seq_length
-        assert len(attention_mask) == max_seq_length
-
         idx = 0
         target_ids = []
         while idx < len(label_tags):
@@ -292,6 +284,13 @@ def convert_example_to_spanfeatures(example, max_seq_length, tokenizer, doc_stri
 
         target_ids += [tokenizer.eos_token_id]
 
+        # Zero-pad up to the sequence length.
+        while len(input_ids) < max_seq_length:
+            input_ids.append(0)
+            attention_mask.append(0)
+
+        assert len(input_ids) == max_seq_length
+        assert len(attention_mask) == max_seq_length
         assert len(target_ids) < max_target_length
 
         while len(target_ids) < max_target_length:
