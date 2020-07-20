@@ -229,16 +229,32 @@ def convert_example_to_spanfeatures(example, max_seq_length, tokenizer, doc_stri
         token_to_orig_map = {}
         token_is_max_context = {}
 
+        found_start = False
         for i in range(doc_span.length):
             split_token_index = doc_span.start + i
-            token_to_orig_map[len(
-                tokens)] = tok_to_orig_index[split_token_index]
 
-            is_max_context = _check_is_max_context(doc_spans, doc_span_index,
-                                                   split_token_index)
-            token_is_max_context[len(tokens)] = is_max_context
-            tokens.append(all_doc_tokens[split_token_index])
-            label_tags.append(all_doc_labels[split_token_index])
+            if not found_start:
+                t = all_doc_tokens[split_token_index]
+                found_start = t.startswith('▁')
+
+            if found_start:
+                token_to_orig_map[len(
+                    tokens)] = tok_to_orig_index[split_token_index]
+
+                is_max_context = _check_is_max_context(doc_spans, doc_span_index,
+                                                       split_token_index)
+                token_is_max_context[len(tokens)] = is_max_context
+                tokens.append(all_doc_tokens[split_token_index])
+                label_tags.append(all_doc_labels[split_token_index])
+
+        if tokens[-1] == '▁':
+            tokens = tokens[:-1]
+            label_tags = label_tags[:-1]
+            del token_is_max_context[len(tokens)]
+
+        retokenized = tokenizer.tokenize(tokenizer.convert_tokens_to_string(tokens))
+        assert len(retokenized) == len(tokens), f'{len(retokenized)} - {len(tokens)} / {retokenized} - {tokens}'
+        assert len(tokens) == len(label_tags) == len(token_is_max_context)
 
         tokens = prefix_tokens + tokens
         tokens.append(tokenizer.eos_token)

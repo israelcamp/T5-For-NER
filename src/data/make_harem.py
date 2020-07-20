@@ -22,17 +22,8 @@ def convert_text_to_example(text,
         if remove_accents:
             w = unidecode.unidecode(w)
 
-        # cleaning the dot and comma
-        w = w.replace('.', ' .').replace(',', ' ,').split(' ')
-        for i, wi in enumerate(w):
-            words.append(wi)
-            if i > 0 and l != 'O':
-                labels.append(f'I-{l.split("-")[-1]}')
-            else:
-                labels.append(l)
-
-        # words.append(w)
-        # labels.append(ws[-1])
+        words.append(w)
+        labels.append(ws[-1])
 
     source_words = []
     target_words = []
