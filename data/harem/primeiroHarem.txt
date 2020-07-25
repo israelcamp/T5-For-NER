@@ -351,8 +351,7 @@ Filosofia O
 e O
 Fundamentos O
 de O
-Matemática O
-. O
+Matemática. O
 Tenho O
 um O
 interesse O
@@ -367,8 +366,7 @@ alguns O
 problemas O
 da O
 Filosofia O
-Antiga O
-, O
+Antiga, O
 particularmente O
 no O
 problema O
@@ -547,8 +545,7 @@ Analytic O
 Geometry O
 and O
 O-minimal O
-Structures O
-. O
+Structures. O
 Às O
 quintas-feiras O
 decorre O
@@ -586,8 +583,7 @@ Vária O
 Sou O
 co-editor O
 da O
-Disputatio O
-, O
+Disputatio, O
 uma O
 revista O
 de O
@@ -662,8 +658,7 @@ dos O
 Carolos O
 ( O
 2001 B-TMP
-) O
-. O
+). O
 A O
 Festa O
 dos O
@@ -768,8 +763,7 @@ visite O
 a O
 página O
 de O
-CONTACTOS O
-. O
+CONTACTOS. O
 Vamos O
 todos O
 ajudar O
@@ -1131,8 +1125,7 @@ m O
 p O
 r O
 a O
-s O
-. O
+s. O
 . O
 . O
 COMPRAS O
@@ -2220,8 +2213,7 @@ alguma O
 coisa O
 e O
 tentar O
-fazer" O
-. O
+fazer". O
 Sobre O
 Khomeini B-PER
 , O
@@ -2541,8 +2533,7 @@ Procon B-ORG
 dentro O
 de O
 uma O
-semana O
-. O
+semana. O
 Os O
 autuados O
 foram: O
@@ -5157,8 +5148,7 @@ lancar O
 seu O
 ultimo O
 numero O
-(v+12 O
-,n O
+(v+12,n O
 4) O
 dedicado O
 à O
@@ -5392,8 +5382,7 @@ Muito O
 Além O
 da O
 lnformação: O
-mídia O
-,cidadania O
+mídia,cidadania O
 e O
 o O
 dilema O
@@ -5866,8 +5855,7 @@ envolvimento O
 mais O
 directo O
 das O
-empresas O
-. O
+empresas. O
 Esta O
 feira O
 pretende O
@@ -7630,9 +7618,9 @@ espécie O
 de O
 delírio. O
 Minha O
-mãe!... O
+mãe!. O
 minha O
-mãe!.. O
+mãe!. O
 Um O
 soluço O
 rompeu-lhe O
@@ -10181,8 +10169,7 @@ Viseu B-LOC
 como O
 é O
 que O
-é O
-? O
+é? O
 E O
 quais O
 são O
@@ -10888,7 +10875,7 @@ a I-ORG
 Construção I-ORG
 Civil, I-ORG
 Lda I-ORG
-::::::.. O
+::::::. O
 Última O
 actualização: O
 09-01-2003 B-TMP
@@ -10937,8 +10924,7 @@ Domingues I-PER
 . O
 Era O
 uma O
-vez O
-... O
+vez. O
 Fundada O
 e O
 iniciada O
@@ -11160,11 +11146,10 @@ os O
 direitos O
 reservados O
 
-.... O
+. O
 Intelbras B-ORG
 - O
-Empresa O
-.... O
+Empresa. O
 "A O
 organização O
 tem O
@@ -12506,8 +12491,7 @@ uma O
 só O
 molécula O
 mensageira O
-induziu O
-, O
+induziu, O
 sem O
 penetrar O
 na O
@@ -12616,8 +12600,7 @@ em O
 5.10-3/10-9 B-VAL
 , O
 isto O
-é O
-, O
+é, O
 em O
 5.106 B-VAL
 vezes: O
@@ -13156,8 +13139,7 @@ Caubi B-PER
 , O
 senhor O
 do O
-caminho O
-, O
+caminho, O
 O O
 acompanhará. O
 O O
@@ -13327,8 +13309,7 @@ O O
 dia O
 vai O
 ficar O
-triste O
-, O
+triste, O
 disse O
 Caubi B-PER
 . O
@@ -13492,8 +13473,7 @@ nas O
 moitas O
 espessas O
 da O
-ubaia O
-, O
+ubaia, O
 soltava O
 os O
 prelúdios O
@@ -13626,7 +13606,7 @@ o O
 sorriso O
 de O
 Iracema B-PER
-... O
+. O
 e O
 foge! O
 A O
@@ -14515,7 +14495,7 @@ tempo O
 do O
 Getúlio B-PER
 também, O
-foi...depois O
+foi.depois O
 do O
 Getúlio B-PER
 , O
@@ -14528,7 +14508,7 @@ todas, O
 né; O
 e O
 ele O
-finalmente... O
+finalmente. O
 caiu O
 em O
 ciladas, O
@@ -15310,7 +15290,7 @@ P O
 Principalmente O
 quando O
 seu O
-pai... O
+pai. O
 R- O
 Com O
 muita O
@@ -15892,7 +15872,7 @@ fazendo O
 experiências O
 com O
 a O
-gente...era, O
+gente.era, O
 vamos O
 dizer O
 assim, O
@@ -17115,7 +17095,7 @@ Paulo I-LOC
 , O
 mas O
 eram O
-namoros...olha, O
+namoros.olha, O
 tem O
 sempre O
 de O
@@ -20940,8 +20920,7 @@ rosto O
 de O
 muitas O
 crianças. O
-Desporto O
-? O
+Desporto? O
 Futebol O
 Campeonato O
 Distrital O
@@ -20982,8 +20961,7 @@ Desportiva O
 (inserido O
 nos O
 Jogos O
-Municipais) O
-? O
+Municipais)? O
 2º O
 Encontro O
 de O
@@ -20991,8 +20969,7 @@ Basquetebol O
 (inserido O
 nos O
 Jogos O
-Municipais) O
-? O
+Municipais)? O
 Cinema O
 Exorcista O
 Destaque O
@@ -21022,8 +20999,7 @@ Marfinite B-ORG
 - O
 Origem O
 -Quem O
-Somos O
-? O
+Somos? O
 DADOS O
 SOBRE O
 A O
@@ -22266,7 +22242,7 @@ alterações O
 nos O
 quatro O
 dias O
-seguintes... O
+seguintes. O
 No O
 documento O
 enviado O
@@ -22699,7 +22675,7 @@ problema. O
 Evitaria O
 uma O
 algazarra O
-desnecessária...», O
+desnecessária.», O
 sustentou O
 Orlando B-PER
 Gonçalves I-PER
@@ -23194,8 +23170,7 @@ quê O
 saber O
 francês O
 naquela O
-altura O
-? O
+altura? O
 Isso O
 ficou-me O
 de O
@@ -23220,8 +23195,7 @@ que O
 os O
 descreve O
 na O
-infância O
-? O
+infância? O
 É O
 curioso O
 que O
@@ -23394,8 +23368,7 @@ anos I-VAL
 E O
 a O
 sua O
-irmã O
-? O
+irmã? O
 Ainda O
 vive. O
 Actualmente, O
@@ -23435,8 +23408,7 @@ vou. O
 E O
 quando O
 era O
-criança O
-? O
+criança? O
 Ela O
 faz O
 uma O
@@ -23478,8 +23450,7 @@ actividades O
 que O
 faziam O
 em O
-família O
-? O
+família? O
 Eu O
 compria O
 as O
@@ -23559,8 +23530,7 @@ nisso. O
 Que O
 tipo O
 de O
-brincadeiras O
-? O
+brincadeiras? O
 Jogar O
 os O
 jogos O
@@ -23573,8 +23543,7 @@ família O
 infleunciou O
 a O
 sua O
-educação O
-? O
+educação? O
 Sim, O
 sim, O
 a O
@@ -23696,8 +23665,7 @@ descreve O
 essa O
 educação O
 que O
-recebeu O
-? O
+recebeu? O
 Culturalmente O
 não O
 foi O
@@ -23795,8 +23763,7 @@ que O
 escola O
 é O
 que O
-foi O
-? O
+foi? O
 Isso O
 para O
 mim O
@@ -23921,8 +23888,7 @@ quando O
 acabou O
 a O
 instrução O
-primária O
-? O
+primária? O
 Para O
 o O
 Ensino O
@@ -24125,8 +24091,7 @@ de O
 casa O
 dos O
 seus O
-pais O
-? O
+pais? O
 Foi. O
 Eu O
 sempre O
@@ -24587,8 +24552,7 @@ séculos O
 e O
 não O
 somos O
-árabes O
-? O
+árabes? O
 Já O
 me O
 deram O
@@ -25093,15 +25057,13 @@ Vamos O
 a O
 saber, O
 meu O
-amor... O
+amor. O
 Decidiste, O
 por O
-fim O
-? O
+fim? O
 Quando O
 queres O
-partir O
-? O
+partir? O
 Nessa O
 noite, O
 entre O
@@ -25205,13 +25167,12 @@ Estou O
 até O
 sôfrego O
 de O
-preguiça... O
+preguiça. O
 Mas O
 tu, O
 dize, O
 quando O
-queres O
-? O
+queres? O
 Maria B-PER
 não O
 respondeu; O
@@ -25249,7 +25210,7 @@ vou O
 ! O
 Passa-me O
 umas O
-migalhas... O
+migalhas. O
 Andam O
 aqui O
 uns O
@@ -25257,7 +25218,7 @@ pardais O
 que O
 ainda O
 não O
-almoçaram... O
+almoçaram. O
 - O
 Não, O
 vem O
@@ -25344,8 +25305,7 @@ de O
 noite, O
 toda O
 a O
-noite O
-?... O
+noite?. O
 E O
 ter O
 aqui O
@@ -25354,8 +25314,7 @@ suas O
 malas, O
 as O
 suas O
-coisas O
-?... O
+coisas?. O
 Ambos O
 murmuraram O
 - O
@@ -25380,7 +25339,7 @@ malas O
 e O
 as O
 suas O
-coisas... O
+coisas. O
 - O
 Escuta, O
 disse-lhe O
@@ -25413,8 +25372,7 @@ e O
 que O
 gostássemos O
 muito O
-dele O
-? O
+dele? O
 Rosa B-PER
 ergueu O
 para O
@@ -25439,7 +25397,7 @@ dele O
 do O
 que O
 gosto O
-!... O
+!. O
 Ambos O
 a O
 beijaram, O
@@ -25509,8 +25467,7 @@ chame O
 papá, O
 só O
 a O
-ti O
-? O
+ti? O
 -Só O
 a O
 mim, O
@@ -25573,7 +25530,7 @@ que O
 a O
 perturbava. O
 - O
-Escuta... O
+Escuta. O
 Tenho O
 ainda O
 muito, O
@@ -25586,21 +25543,20 @@ Vamos O
 para O
 o O
 nosso O
-quiosque... O
+quiosque. O
 Tu O
 não O
 tens O
 nada O
 que O
 fazer, O
-não O
-? O
+não? O
 E O
 que O
 tenhas, O
 hoje O
 és O
-meu... O
+meu. O
 Vou O
 já O
 ter O
@@ -25624,7 +25580,7 @@ doçura O
 velada O
 do O
 céu O
-cinzento... O
+cinzento. O
 E O
 a O
 vida O
@@ -25727,14 +25683,11 @@ E O
 em O
 casa O
 todos O
-bons O
-? O
+bons? O
 A O
-senhora O
-? O
+senhora? O
 A O
-menina O
-? O
+menina? O
 - O
 Tudo O
 bom, O
@@ -25833,8 +25786,7 @@ confissão. O
 - O
 Estás O
 bem O
-assim O
-? O
+assim? O
 Queres O
 que O
 o O
@@ -25843,16 +25795,14 @@ te O
 traga O
 água O
 e O
-cognac O
-?... O
-Não O
-? O
+cognac?. O
+Não? O
 Então O
 ouve O
 agora, O
 quero-te O
 contar O
-tudo... O
+tudo. O
 Era O
 toda O
 a O
@@ -25889,8 +25839,7 @@ pés. O
 Estás O
 bem, O
 não O
-estás O
-? O
+estás? O
 Carlos B-PER
 esperava, O
 comovido. O
@@ -25956,7 +25905,7 @@ deviam O
 humilhar. O
 - O
 Sim, O
-conta... O
+conta. O
 Depois O
 esquecemos O
 tudo O
@@ -25966,13 +25915,12 @@ sempre. O
 Mas O
 agora O
 dize, O
-conta... O
+conta. O
 Onde O
 nasceste O
 tu O
 por O
-fim O
-? O
+fim? O
 Nascera O
 em O
 Viena B-LOC
@@ -26049,7 +25997,7 @@ uma O
 garrafa O
 de O
 vinho O
-velho... O
+velho. O
 De O
 Viena B-LOC
 apenas O
@@ -26554,7 +26502,7 @@ bon O
 rien, O
 mon O
 enfant O
-!... O
+!. O
 Um O
 dia, O
 porém, O
@@ -26830,7 +26778,7 @@ lágrimas, O
 tinha O
 havido O
 uma O
-desgraça»... O
+desgraça». O
 Mudaram O
 então O
 para O
@@ -26868,7 +26816,7 @@ das O
 mangas O
 os O
 punhos O
-enxovalhados... O
+enxovalhados. O
 Por O
 vezes O
 entre O
@@ -26893,7 +26841,7 @@ irlandês, O
 muito O
 moço, O
 Mac-Gren B-PER
-... O
+. O
 Madame B-PER
 de I-PER
 Champigny I-PER
@@ -26992,7 +26940,7 @@ onde O
 tinha O
 feras O
 em O
-jaulas... O
+jaulas. O
 E O
 no O
 entanto O
@@ -27064,7 +27012,7 @@ ela O
 a O
 cada O
 instante O
-corava... O
+corava. O
 A O
 esse O
 tempo O
@@ -27154,7 +27102,7 @@ dum O
 modo O
 que O
 a O
-assustava... O
+assustava. O
 - O
 Minha O
 pobre O
@@ -27195,7 +27143,7 @@ de O
 Mac-Gren B-PER
 , O
 nesse O
-cofre... O
+cofre. O
 Tenho-as O
 guardado O
 sempre O
@@ -27208,7 +27156,7 @@ mesma, O
 se O
 me O
 é O
-possível... O
+possível. O
 Pede-me O
 em O
 todas O
@@ -27232,19 +27180,18 @@ avó, O
 obter O
 a O
 sua O
-indulgência... O
+indulgência. O
 Mil O
 promessas O
 ! O
 E O
 era O
-sincero... O
+sincero. O
 Que O
 queres O
 que O
 te O
-diga O
-? O
+diga? O
 A O
 mamã O
 uma O
@@ -27261,7 +27208,7 @@ em O
 Paris B-LOC
 só, O
 num O
-hotel... O
+hotel. O
 Tinha O
 um O
 palpite, O
@@ -27269,7 +27216,7 @@ um O
 terror O
 que O
 Trevernes B-PER
-aparecia... O
+aparecia. O
 E O
 eu O
 só O
@@ -27282,7 +27229,7 @@ pensei O
 em O
 comprar O
 um O
-revólver... O
+revólver. O
 Mas O
 quem O
 veio O
@@ -27395,7 +27342,7 @@ calma O
 e O
 nobre O
 de O
-avósinha... O
+avósinha. O
 Era O
 em O
 maio B-TMP
@@ -27466,7 +27413,7 @@ saia, O
 a O
 pedir-lhe O
 cem O
-francos... O
+francos. O
 Por O
 fim O
 nascera O
@@ -27847,7 +27794,7 @@ prussianos O
 marchando O
 sobre O
 Paris B-LOC
-... O
+. O
 Não O
 podiam O
 permanecer O
@@ -27920,7 +27867,7 @@ que O
 já O
 tinha O
 três O
-meses... O
+meses. O
 A O
 Nação B-ORG
 entretanto O
@@ -28121,7 +28068,7 @@ cumpriu O
 e O
 a O
 faixa O
-presidência... O
+presidência. O
 ainda O
 uma O
 vez, O
@@ -28243,7 +28190,7 @@ antigo O
 ditador. O
 Sufragado O
 e O
-reconhecido... O
+reconhecido. O
 por O
 uma O
 minoria, O
@@ -28370,8 +28317,7 @@ foi O
 distribuída. O
 Há O
 alguma O
-observação O
-? O
+observação? O
 Senhora B-PER
 Presidente I-PER
 , O
@@ -28768,8 +28714,7 @@ Presidente I-PER
 de O
 resto, O
 salientou O
-o O
-, O
+o, O
 seja O
 incluído O
 no O
@@ -30127,8 +30072,7 @@ suspender O
 a O
 actividade O
 desses O
-navios O
-? O
+navios? O
 É O
 urgente O
 que O
@@ -32929,7 +32873,7 @@ Procurar: O
 em: O
 Escolha O
 um O
-canal... O
+canal. O
 A O
 APOGEP B-ORG
 Notícias O
@@ -33445,8 +33389,7 @@ Enviar O
 uma O
 mensagem O
 para O
-etap@mail.telepac.pt> O
-, O
+etap@mail.telepac.pt>, O
 com O
 questões O
 ou O
@@ -33555,7 +33498,7 @@ Ana B-PER
 Paula I-PER
 cortou O
 o O
-cabelo... O
+cabelo. O
 Que O
 gracinha. O
 - O
@@ -33660,7 +33603,7 @@ sofá. O
 Sem O
 falar O
 no O
-DADO... O
+DADO. O
 - O
 O O
 famoso O
@@ -33726,8 +33669,7 @@ encontro. O
 Não O
 estou O
 entendendo. O
-· O
-. O
+·. O
 Conheça: O
 Colunistas O
 Light O
@@ -34790,8 +34732,7 @@ Síndrome O
 Fibrosítica O
 ( O
 1952 B-TMP
-) O
-, O
+), O
 Síndrome O
 Fibromiálgica, O
 entre O
@@ -34945,8 +34886,7 @@ forma O
 extremamente O
 dolorosa O
 e O
-incapacitante O
-, O
+incapacitante, O
 ela O
 não O
 causa O
@@ -34959,8 +34899,7 @@ doença O
 comum O
 que O
 atinge O
-homens O
-, O
+homens, O
 mulheres O
 e O
 crianças O
@@ -34988,8 +34927,7 @@ dos O
 países. O
 Da O
 população O
-atingida O
-, O
+atingida, O
 entre B-VAL
 80% I-VAL
 a I-VAL
@@ -35458,7 +35396,7 @@ de O
 memória, O
 confusão O
 mental, O
-etc.. O
+etc. O
 Perturbações O
 gastrointestinais O
 Entre B-VAL
@@ -35556,8 +35494,7 @@ mudarem O
 para O
 o O
 formato O
-digital O
-. O
+digital. O
 A O
 parceria, O
 anunciada O
@@ -35616,8 +35553,7 @@ leitura O
 de O
 e-books O
 Microsoft O
-Reader O
-. O
+Reader. O
 A O
 Microsoft B-ORG
 comecara' O
@@ -35670,8 +35606,7 @@ respectivo O
 software O
 para O
 leitura O
-destes O
-. O
+destes. O
 O O
 envolvimento O
 da O
@@ -35746,8 +35681,7 @@ oucam O
 versoes O
 gravadas O
 dos O
-livros O
-. O
+livros. O
 ( O
 Los B-ORG
 Angeles I-ORG
@@ -35774,8 +35708,7 @@ da O
 Informacao O
 ou O
 
-Fw O
-. O
+Fw. O
 Atinga O
 seu O
 publico O
@@ -36053,8 +35986,7 @@ dicas O
 e O
 truques O
 (em O
-formato O
-.doc O
+formato.doc O
 - O
 Word) O
 ensinando O
@@ -36854,12 +36786,12 @@ serão O
 anos O
 de O
 meu O
-padrinho... O
+padrinho. O
 -- O
 Ou O
 de O
 minha O
-madrinha... O
+madrinha. O
 -- O
 Mas O
 por O
@@ -36881,10 +36813,10 @@ Há O
 de O
 haver O
 jantar O
-grande... O
+grande. O
 -- O
 Com O
-doce... O
+doce. O
 -- O
 Talvez O
 dancemos. O
@@ -37088,7 +37020,7 @@ do O
 público O
 e O
 as O
-palmas... O
+palmas. O
 Já O
 duas O
 vezes O
@@ -37248,7 +37180,7 @@ houvesse O
 agora O
 a O
 mesma O
-cousa... O
+cousa. O
 Ah! O
 lembrou-me O
 que O
@@ -38094,7 +38026,7 @@ mais O
 esquerda,-- O
 assim, O
 segure O
-bem..." O
+bem." O
 Depois, O
 ao O
 longe, O
@@ -38105,7 +38037,7 @@ e O
 as O
 seges O
 atrás O
-dele... O
+dele. O
 Lá O
 iam O
 meu O
@@ -38651,7 +38583,7 @@ calçada, O
 à O
 esquina O
 da O
-rua... O
+rua. O
 Minha O
 mãe O
 sufocou O
@@ -39108,7 +39040,7 @@ e O
 pronto, O
 já O
 leu O
-tudo... O
+tudo. O
 Matthew B-PER
 , O
 que O
@@ -39138,7 +39070,7 @@ ter O
 alguém O
 trabalhando O
 nesta O
-pílula... O
+pílula. O
 provavelmente, O
 Bill B-PER
 Gates I-PER
@@ -39300,7 +39232,7 @@ a O
 várias O
 e O
 várias O
-gerações... O
+gerações. O
 Matthew B-PER
 , O
 por O
@@ -39404,7 +39336,7 @@ blog O
 e O
 este O
 fosse O
-deletado... O
+deletado. O
 Imaginem O
 se O
 os O
@@ -40818,7 +40750,7 @@ Martino I-ORG
 New O
 Page O
 1 O
-Pesquisa... O
+Pesquisa. O
 Origem O
 do O
 Metodismo O
@@ -41082,7 +41014,7 @@ Fotográfico O
 Comentários O
 Links O
 I O
-de... O
+de. O
 Uma O
 nova O
 versão O
@@ -42893,8 +42825,7 @@ passado O
 em O
 tom O
 de O
-ordem O
-. O
+ordem. O
 No O
 fim O
 da O
@@ -43747,8 +43678,7 @@ falam, O
 o O
 que O
 é O
-prometem O
-, O
+prometem, O
 mas O
 não O
 acredites O
@@ -43940,8 +43870,7 @@ a O
 maioria O
 dos O
 organitos. O
-Geralmente O
-, O
+Geralmente, O
 o O
 corpo O
 celular O
@@ -44126,8 +44055,7 @@ e O
 dispostas O
 paralelamente O
 entre O
-si O
-, O
+si, O
 formando O
 grupos O
 que O
@@ -44139,8 +44067,7 @@ nuclear. O
 Além O
 das O
 vesículas O
-achatadas O
-, O
+achatadas, O
 encontram-se O
 também O
 vesículas O
@@ -44167,8 +44094,7 @@ a O
 coloração O
 com O
 o O
-ósmio O
-, O
+ósmio, O
 ele O
 aparece O
 como O
@@ -48943,8 +48869,7 @@ Sexto O
 Geografia O
 ( O
 1967 B-TMP
-) O
-, O
+), O
 Dual O
 ( O
 1972 B-TMP
@@ -48986,8 +48911,7 @@ de O
 Bronze, O
 A O
 Fada O
-Oriana O
-, O
+Oriana, O
 etc. O
 Voltar O
 àpágina O
@@ -49235,7 +49159,7 @@ Mental I-ORG
 do I-ORG
 Algarve I-ORG
 , O
-etc... O
+etc. O
 Correspondendo O
 ao O
 apelo O
@@ -50229,7 +50153,7 @@ onde O
 há O
 belas O
 vias O
-negativas... O
+negativas. O
 
 Belly B-PER
 depois O
@@ -50407,7 +50331,7 @@ Tanya B-PER
 tinha O
 tantas O
 canções O
-acumuladas... O
+acumuladas. O
 Além O
 disso, O
 leva O
@@ -50484,7 +50408,7 @@ seus O
 pontos O
 de O
 vista O
-femininos... O
+femininos. O
 R. O
 -- O
 A O
@@ -51856,7 +51780,7 @@ de O
 facto O
 só O
 conhecendo O
-bem..por O
+bem.por O
 isso O
 é O
 que O
@@ -52381,7 +52305,7 @@ existe. O
 Hoje O
 estamos O
 num O
-campo...já O
+campo.já O
 escreveram O
 a O
 História O
@@ -52553,8 +52477,7 @@ da O
 membrana. O
 Em O
 alguns O
-casos O
-, O
+casos, O
 há O
 restrição O
 deste O
@@ -52848,8 +52771,7 @@ o O
 site O
 da O
 ANCIB B-ORG
-ICQ O
-, O
+ICQ, O
 25328270 O
 
 Sua O
@@ -56544,8 +56466,7 @@ Entrada O
 Contactos O
 Publicidade O
 Browser: O
-I.Explorer O
-? O
+I.Explorer? O
 Definição: O
 800x600 B-VAL
 Webmaster O
@@ -56852,8 +56773,7 @@ Laboratorios O
 Emergencias O
 Veterinarios O
 Farmacias O
-Instituição........... O
-..... O
+Instituição. O
 Acupuntura O
 e O
 impotência O
@@ -57434,8 +57354,7 @@ noite O
 moradores O
 do O
 mesmo O
-bairro O
-, O
+bairro, O
 relataram O
 que O
 a O
@@ -57458,7 +57377,7 @@ amanheceram O
 mortos. O
 C.L. B-PER
 página O
-principal.... O
+principal. O
 Clique O
 aqui O
 e O
@@ -59464,8 +59383,7 @@ feitos O
 os O
 pavilhões O
 na O
-D B-LOC
-.Pedro I-LOC
+D.Pedro B-LOC
 V I-LOC
 , O
 depois O
@@ -59883,8 +59801,7 @@ distância O
 a O
 percorrer. O
 Por O
-exemplo O
-, O
+exemplo, O
 a O
 glicose O
 demora O
@@ -60105,8 +60022,7 @@ de O
 Permeabilidade O
 membranar O
 (P, O
-cm2/s) O
-, O
+cm2/s), O
 uma O
 vez O
 que O
@@ -60433,8 +60349,7 @@ Nernst O
 mas O
 é O
 numericamente O
-superior O
-, O
+superior, O
 a O
 força O
 eléctrica O
@@ -60476,8 +60391,7 @@ Nernst O
 mas O
 é O
 numericamente O
-inferior O
-, O
+inferior, O
 a O
 força O
 da O
@@ -61282,8 +61196,7 @@ psicomotricidade O
 Materiais O
 utilizados O
 nas O
-sessões O
-. O
+sessões. O
 Destina-se O
 Psicólogos, O
 Pedagogos, O
@@ -62317,7 +62230,7 @@ Lázaro B-PER
 ele, O
 Lázara B-PER
 a O
-senhora... O
+senhora. O
 R- O
 Sim. O
 Os O
@@ -62500,7 +62413,7 @@ Como O
 que O
 era, O
 conta O
-isso... O
+isso. O
 R- O
 Bom, O
 tinha O
@@ -62767,7 +62680,7 @@ né, O
 meu O
 pai, O
 ele O
-era... O
+era. O
 P O
 - O
 Ele O
@@ -62778,7 +62691,7 @@ R- O
 Não, O
 ele O
 quase O
-não...a O
+não.a O
 gente O
 também O
 respeitava O
@@ -63415,7 +63328,7 @@ casamento? O
 R- O
 Ah, O
 festa, O
-comida... O
+comida. O
 P O
 - O
 Conta O
@@ -63548,7 +63461,7 @@ P O
 Bom, O
 é O
 preferível O
-então... O
+então. O
 R- O
 Apesar O
 de O
@@ -63711,7 +63624,7 @@ quando O
 eu O
 casei O
 já O
-não...Dava O
+não.Dava O
 para O
 a O
 gente O
@@ -64227,7 +64140,7 @@ Era O
 duro! O
 R- O
 Era, O
-mas... O
+mas. O
 P O
 - O
 A O
@@ -64236,7 +64149,7 @@ vinha O
 do O
 Limão B-LOC
 para O
-trabalhar... O
+trabalhar. O
 R- O
 Nas O
 Perdizes B-LOC
@@ -64296,7 +64209,7 @@ nos O
 tempos O
 que O
 as O
-criança...só O
+criança.só O
 trabalhava. O
 Sábado O
 e O
@@ -64383,7 +64296,7 @@ A O
 senhora O
 arrumava O
 formas O
-de... O
+de. O
 P O
 - O
 E O
@@ -65011,7 +64924,7 @@ socorreram O
 ele O
 e O
 tudo, O
-mas...aí O
+mas.aí O
 então O
 tive O
 que O
@@ -65023,7 +64936,7 @@ patroa. O
 P O
 - O
 Ah O
-sim... O
+sim. O
 R O
 - O
 Mas O
@@ -65202,7 +65115,7 @@ senhora O
 está O
 aposentada? O
 R- O
-Desde... O
+Desde. O
 Três O
 anos. O
 P O
@@ -65420,7 +65333,7 @@ tenho. O
 Deixa O
 eu O
 ver, O
-tenho...acho O
+tenho.acho O
 que O
 eu O
 tenho O
@@ -65467,7 +65380,7 @@ um O
 namorado O
 chamado O
 Alfredo B-PER
-...que O
+.que O
 eu O
 nunca O
 amei O
@@ -65775,7 +65688,7 @@ justo, O
 né, O
 deve O
 ser O
-isso...não O
+isso.não O
 estou O
 gostando O
 de O
@@ -65787,7 +65700,7 @@ P O
 - O
 Este O
 tempo O
-passou... O
+passou. O
 R- O
 Ah, O
 é? O
@@ -65903,7 +65816,7 @@ rádio? O
 R- O
 Não. O
 Tinha O
-um...alto O
+um.alto O
 falante. O
 Hoje O
 acho O
@@ -66092,7 +66005,7 @@ Tonico B-PER
 e O
 Tinoco B-PER
 não, O
-era...como O
+era.como O
 é O
 que O
 era? O
@@ -66261,7 +66174,7 @@ Bom, O
 também O
 não O
 sei O
-porque... O
+porque. O
 P O
 - O
 Se O
@@ -66647,7 +66560,7 @@ lá O
 mais O
 para O
 cima, O
-então... O
+então. O
 P O
 - O
 A O
@@ -70250,8 +70163,7 @@ o O
 professor B-PER
 Lúcio I-PER
 Craveiro I-PER
-." O
-, O
+.", O
 "Está O
 bem! O
 Dê-me O
@@ -70394,13 +70306,11 @@ disse: O
 senhor O
 reitor O
 vamos O
-ver." O
-, O
+ver.", O
 "Não, O
 porque O
 eu O
-nomeio-o." O
-, O
+nomeio-o.", O
 "Pois O
 aí O
 é O
@@ -72370,7 +72280,7 @@ Lista B-PER
 ) O
 
 Você O
-sabia... O
+sabia. O
 Véu B-ORG
 da I-ORG
 Noiva I-ORG
@@ -72387,7 +72297,7 @@ Infantil O
 e O
 Acessórios O
 Você O
-sabia...que O
+sabia.que O
 na O
 Copa O
 do O
@@ -72435,7 +72345,7 @@ roupa O
 para O
 aquela O
 ocasião O
-inesquecível... O
+inesquecível. O
 não O
 deixe O
 de O
@@ -73295,9 +73205,9 @@ em O
 ou O
 foi O
 85 B-TMP
-... O
+. O
 legal, O
-né?... O
+né?. O
 E O
 essa O
 é O
@@ -73312,14 +73222,14 @@ câmera O
 sacudiu O
 um O
 pouco O
-ali... O
+ali. O
 A O
 curetagem O
 da O
 Dorothy B-PER
 é O
 a O
-próxima..." O
+próxima." O
 [Nota: O
 será O
 que O
@@ -73517,13 +73427,13 @@ e O
 é O
 filha O
 de O
-libaneses... O
+libaneses. O
 é O
 filha O
 de O
 libanês O
 com O
-árabe... O
+árabe. O
 com O
 sírio. O
 P O
@@ -73597,7 +73507,7 @@ com O
 comércio O
 de O
 armarinhos, O
-e... O
+e. O
 que O
 deu O
 origem O
@@ -73626,7 +73536,7 @@ E O
 por O
 que O
 é O
-que... O
+que. O
 qual O
 que O
 foi O
@@ -73712,7 +73622,7 @@ P O
 No O
 caso O
 dos O
-irmãos... O
+irmãos. O
 mais O
 velhos, O
 eles O
@@ -73740,7 +73650,7 @@ Eles O
 começaram O
 como O
 mascates! O
-Vieram,... O
+Vieram,. O
 vamos O
 dizer, O
 com O
@@ -73756,7 +73666,7 @@ se O
 aventurar, O
 eram O
 solteiros, O
-e... O
+e. O
 tentar, O
 vamos O
 dizer, O
@@ -73884,7 +73794,7 @@ dele O
 o O
 pai O
 dele, O
-e... O
+e. O
 eu O
 sei O
 que O
@@ -73967,7 +73877,7 @@ da O
 infância, O
 o O
 local, O
-assim... O
+assim. O
 o O
 que O
 é O
@@ -73996,7 +73906,7 @@ Brigadeiro B-LOC
 Luís I-LOC
 Antônio I-LOC
 , O
-e... O
+e. O
 pela O
 idade O
 e O
@@ -74074,7 +73984,7 @@ a O
 andar O
 de O
 bicicleta, O
-enfim... O
+enfim. O
 São B-LOC
 Paulo I-LOC
 naquela O
@@ -74095,7 +74005,7 @@ futebol O
 na O
 rua, O
 jogar O
-taco,... O
+taco,. O
 enfim, O
 brincar O
 com O
@@ -74120,7 +74030,7 @@ puberdade O
 e O
 adolescência O
 ali. O
-E... O
+E. O
 fizemos O
 muitas O
 besteiras, O
@@ -74129,8 +74039,7 @@ arrumar O
 briga O
 com O
 outras O
-turmas, O
-... O
+turmas,. O
 aprontava O
 coisa O
 de O
@@ -74248,18 +74157,18 @@ tem O
 da O
 época O
 da O
-escola... O
+escola. O
 R O
 - O
 Da O
 escola? O
-Ich...! O
+Ich.! O
 Isso O
 vai O
 ser O
 puxado, O
 ficar O
-registrado... O
+registrado. O
 (riso) O
 Bom, O
 no O
@@ -74272,8 +74181,7 @@ no O
 Colégio B-ORG
 Dante I-ORG
 Alighieri I-ORG
-, O
-... O
+,. O
 durante O
 muitos O
 anos O
@@ -74287,7 +74195,7 @@ curso O
 secundário, O
 no O
 ginasial, O
-eu... O
+eu. O
 não O
 queria O
 fazer O
@@ -74307,7 +74215,7 @@ Alighieri I-ORG
 naquele O
 ano O
 estava O
-inaugurando... O
+inaugurando. O
 o O
 primeiro O
 curso O
@@ -74396,7 +74304,7 @@ na O
 época, O
 um O
 Fissori. O
-E... O
+E. O
 eu O
 estudando O
 secretariado, O
@@ -74500,7 +74408,7 @@ P O
 E O
 o O
 Rei B-ORG
-... O
+. O
 eu O
 queria O
 que O
@@ -74518,7 +74426,7 @@ do I-ORG
 Armarinho I-ORG
 foi O
 fundada O
-quando... O
+quando. O
 R O
 - O
 É, O
@@ -74536,7 +74444,7 @@ fundada O
 em O
 1926 B-TMP
 , O
-e... O
+e. O
 era O
 uma O
 loja O
@@ -74603,7 +74511,7 @@ muita O
 disposição O
 de O
 vencer. O
-E... O
+E. O
 com O
 o O
 decorrer O
@@ -74618,7 +74526,7 @@ para O
 um O
 endereço O
 maior O
-e... O
+e. O
 já O
 com O
 mais O
@@ -74630,8 +74538,7 @@ um O
 pouco O
 mais O
 de O
-funcionários, O
-... O
+funcionários,. O
 e O
 ela O
 veio O
@@ -74893,7 +74800,7 @@ muito O
 séria O
 para O
 organização O
-e... O
+e. O
 é O
 uma O
 loja O
@@ -74931,8 +74838,8 @@ A O
 gente O
 procura O
 estar O
-sempre... O
-e... O
+sempre. O
+e. O
 estar O
 sempre, O
 vamos O
@@ -75015,7 +74922,7 @@ tinha O
 aproximadamente O
 17 B-VAL
 funcionários O
-é...e O
+é.e O
 a O
 gente, O
 eu O
@@ -75030,7 +74937,7 @@ aprender O
 o O
 meu O
 lugar O
-é... O
+é. O
 porque O
 a O
 gente O
@@ -75152,7 +75059,7 @@ eram O
 clientes O
 do O
 Brasil B-LOC
-inteiro... O
+inteiro. O
 O O
 Brasil B-LOC
 de O
@@ -75225,7 +75132,7 @@ regiões O
 fortes O
 de O
 distribuição, O
-mas... O
+mas. O
 as O
 pessoas O
 faziam O
@@ -75301,7 +75208,7 @@ um O
 período O
 difícil, O
 era O
-outro... O
+outro. O
 um O
 perfil O
 completamente O
@@ -75382,8 +75289,7 @@ de O
 produtos O
 é O
 extremamente O
-maior, O
-... O
+maior,. O
 nós O
 passamos O
 por O
@@ -75542,8 +75448,7 @@ de O
 soltar O
 com O
 a O
-corda, O
-... O
+corda,. O
 pequenos O
 brinquedos, O
 algumas O
@@ -75552,9 +75457,9 @@ de O
 plástico, O
 assim, O
 coisa O
-de... O
+de. O
 jarra O
-plástica,... O
+plástica,. O
 e O
 vai O
 por O
@@ -75628,12 +75533,12 @@ rendas, O
 bordados, O
 galões, O
 linhas, O
-zíperes... O
+zíperes. O
 P O
--... O
-elásticos... O
+-. O
+elásticos. O
 R O
--...elásticos, O
+-.elásticos, O
 cadarços, O
 cordões, O
 coisas O
@@ -75808,7 +75713,7 @@ ter O
 mais O
 de O
 mil. O
-Botão... O
+Botão. O
 botão O
 tem O
 algumas O
@@ -75839,7 +75744,7 @@ de O
 alumínio, O
 botão O
 para O
-forrar... O
+forrar. O
 tem O
 uma O
 variedade O
@@ -75879,7 +75784,7 @@ uma O
 área O
 bem O
 grande O
-e... O
+e. O
 e O
 precisa O
 ter O
@@ -75933,15 +75838,15 @@ dizer, O
 eram O
 os O
 balcões, O
-né... O
+né. O
 R O
--... O
+-. O
 é, O
 eram O
 os O
-balcões... O
+balcões. O
 P O
--...e O
+-.e O
 a O
 mercadoria O
 não O
@@ -75958,7 +75863,7 @@ loja O
 do O
 senhor O
 hoje, O
-está... O
+está. O
 R O
 - O
 É, O
@@ -76003,7 +75908,7 @@ dizia O
 quanto O
 queria O
 comprar O
-e... O
+e. O
 e O
 o O
 vendedor O
@@ -76150,10 +76055,10 @@ cliente O
 tinha O
 mais O
 pressa, O
-é... O
+é. O
 então O
 ele O
-ia... O
+ia. O
 nós O
 fomos O
 gradativamente O
@@ -76203,8 +76108,7 @@ também O
 copiando O
 os O
 sistemas O
-internacionais, O
-... O
+internacionais,. O
 quanto O
 mais O
 a O
@@ -76347,7 +76251,7 @@ da O
 loja O
 atual, O
 quer O
-dizer... O
+dizer. O
 o O
 dia O
 em O
@@ -76704,7 +76608,7 @@ nascer O
 já O
 era O
 assim. O
-E... O
+E. O
 aliás O
 eu O
 diria O
@@ -76804,7 +76708,7 @@ de I-LOC
 Março I-LOC
 . O
 Então, O
-hoje... O
+hoje. O
 isso O
 cresceu O
 bastante, O
@@ -76851,7 +76755,7 @@ tem O
 de O
 tudo! O
 Você O
-tem... O
+tem. O
 as O
 coisas O
 mais O
@@ -77012,13 +76916,13 @@ qual O
 que O
 era O
 a O
-mercadoria... O
+mercadoria. O
 não O
 tinha O
 essa O
 diversidade O
 de O
-hoje... O
+hoje. O
 R O
 - O
 Era O
@@ -77100,13 +77004,13 @@ perfumaria, O
 tipo O
 Leite O
 de O
-Rosas,... O
+Rosas,. O
 alguma O
 coisa O
 a O
 nível O
 de O
-fraldas,... O
+fraldas,. O
 que O
 mais? O
 Botão O
@@ -77130,7 +77034,7 @@ botão, O
 ainda O
 existe O
 hoje, O
-meio...que O
+meio.que O
 é O
 o O
 botão O
@@ -77169,7 +77073,7 @@ caixa O
 de O
 geladeira, O
 que O
-era... O
+era. O
 as O
 geladeiras O
 antigamente O
@@ -77212,7 +77116,7 @@ né. O
 P O
 - O
 Quantidade O
-enorme... O
+enorme. O
 R O
 - O
 Era O
@@ -77235,7 +77139,7 @@ ano, O
 né. O
 Avião O
 era O
-precário,... O
+precário,. O
 transporte O
 de O
 ônibus O
@@ -77379,7 +77283,7 @@ Março I-LOC
 é O
 uma O
 rua O
-que... O
+que. O
 é O
 extremamente O
 mais O
@@ -77444,7 +77348,7 @@ um O
 público O
 de O
 classe O
-mais... O
+mais. O
 classe O
 D, O
 classe O
@@ -77582,8 +77486,7 @@ ele O
 está O
 lançando, O
 ou O
-vem... O
-... O
+vem. O
 olhar O
 o O
 que O
@@ -77634,7 +77537,7 @@ vende O
 mais O
 em O
 conta, O
-e... O
+e. O
 até O
 pela O
 tradição, O
@@ -77645,7 +77548,7 @@ pelo O
 conhecimento O
 da O
 nossa O
-loja,... O
+loja,. O
 as O
 pessoas O
 vêm O
@@ -77787,7 +77690,7 @@ atividades. O
 Por O
 exemplo, O
 agora, O
-com... O
+com. O
 nas O
 proximidades O
 do O
@@ -77906,7 +77809,7 @@ do O
 Rei B-ORG
 do I-ORG
 Armarinho I-ORG
-... O
+. O
 R O
 - O
 Bom, O
@@ -77984,14 +77887,14 @@ nome, O
 e O
 nós O
 fizemos O
-um... O
+um. O
 uma O
 divulgação O
 através, O
 através O
 da O
-imprensa,... O
-tentando... O
+imprensa,. O
+tentando. O
 bastante O
 institucional, O
 tentando O
@@ -78022,7 +77925,7 @@ pequenas O
 coisas O
 ". O
 E O
-mostrava... O
+mostrava. O
 um O
 bustiê O
 preso O
@@ -78034,7 +77937,7 @@ dizer, O
 se O
 caísse O
 aquele O
-botão... O
+botão. O
 (riso) O
 ia O
 fazer O
@@ -78045,7 +77948,7 @@ mesma O
 coisa O
 com O
 o O
-zíper... O
+zíper. O
 e O
 foram O
 feitos O
@@ -78093,7 +77996,7 @@ sua O
 pergunta O
 mais O
 uma O
-vez,... O
+vez,. O
 vou O
 te O
 responder, O
@@ -78108,7 +78011,7 @@ ano O
 passado, O
 a O
 gente O
-vem... O
+vem. O
 veio O
 em O
 crise O
@@ -78118,7 +78021,7 @@ Plano O
 Collor O
 para O
 cá, O
-e... O
+e. O
 já O
 até O
 no O
@@ -78155,7 +78058,7 @@ dentro O
 da O
 loja, O
 fizemos O
-um... O
+um. O
 um O
 concurso: O
 a O
@@ -78195,7 +78098,7 @@ variadas O
 em O
 inúmeros O
 jornais O
-de... O
+de. O
 de O
 primeira O
 classe, O
@@ -78334,7 +78237,7 @@ atrair O
 consumidores? O
 R O
 - O
-É... O
+É. O
 o O
 que O
 eu O
@@ -78369,7 +78272,7 @@ quer O
 produto, O
 quer O
 qualidade, O
-quer... O
+quer. O
 quer O
 preço. O
 Então, O
@@ -78398,7 +78301,7 @@ outro O
 dá O
 prazo O
 no O
-cheque... O
+cheque. O
 quer O
 dizer, O
 você O
@@ -78502,7 +78405,7 @@ um O
 prazo O
 definido O
 para O
-terminar,... O
+terminar,. O
 isso O
 agilizou, O
 vamos O
@@ -78544,7 +78447,7 @@ fornecedores. O
 R O
 - O
 Bom, O
-nós... O
+nós. O
 vamos O
 dizer, O
 até O
@@ -78651,10 +78554,10 @@ R O
 - O
 Não. O
 P O
--... O
+-. O
 de O
 armarinho O
-para...? O
+para.? O
 R O
 - O
 Não, O
@@ -78689,7 +78592,7 @@ loja O
 pedindo O
 um O
 botão O
-diferente...? O
+diferente.? O
 R O
 - O
 A O
@@ -78725,7 +78628,7 @@ desfile O
 de, O
 de O
 modas, O
-assim... O
+assim. O
 R O
 - O
 É, O
@@ -78739,7 +78642,7 @@ P O
 Como O
 é O
 que O
-é...? O
+é.? O
 R O
 - O
 O O
@@ -78749,8 +78652,8 @@ acontece O
 o O
 seguinte: O
 a O
-gente... O
-todos... O
+gente. O
+todos. O
 em O
 todos O
 os O
@@ -78864,7 +78767,7 @@ pessoal O
 das O
 confecções, O
 o O
-pessoal... O
+pessoal. O
 mesmo O
 curiosos, O
 ou O
@@ -78892,7 +78795,7 @@ de O
 produto O
 que O
 vai O
-usar... O
+usar. O
 isso O
 ajuda O
 bastante O
@@ -78923,7 +78826,7 @@ Univinco B-ORG
 o O
 senhor O
 foi O
-fundador... O
+fundador. O
 eu O
 queria O
 que O
@@ -78942,7 +78845,7 @@ Univinco B-ORG
 é O
 uma O
 coisa O
-antiga... O
+antiga. O
 A O
 história O
 da O
@@ -78963,7 +78866,7 @@ Rua B-LOC
 25 I-LOC
 de I-LOC
 Março I-LOC
-tinha... O
+tinha. O
 e O
 os O
 comerciantes O
@@ -78986,7 +78889,7 @@ prefeitura, O
 com O
 relação O
 aos O
-órgãos... O
+órgãos. O
 aos O
 órgão O
 públicos O
@@ -79002,7 +78905,7 @@ mau O
 calçamento, O
 um O
 mau O
-asfalto,... O
+asfalto,. O
 pouca O
 segurança, O
 não O
@@ -79030,7 +78933,7 @@ com O
 o O
 espírito O
 de O
-fortalecer... O
+fortalecer. O
 fortalecer O
 os O
 comerciantes O
@@ -79039,7 +78942,7 @@ relação O
 aos O
 órgãos O
 públicos, O
-eh... O
+eh. O
 essa O
 associação, O
 vamos O
@@ -79047,7 +78950,7 @@ dizer, O
 representava O
 uma O
 região O
-que... O
+que. O
 historicamente O
 representa, O
 vamos O
@@ -79073,7 +78976,7 @@ na O
 época O
 foi O
 fundado, O
-a... O
+a. O
 Univinco B-ORG
 com O
 aproximadamente O
@@ -79158,7 +79061,7 @@ feito O
 algumas O
 reformas O
 na O
-região... O
+região. O
 antigamente O
 a O
 25 B-LOC
@@ -79179,7 +79082,7 @@ Univinco B-ORG
 ajudou O
 até O
 a O
-canalizar... O
+canalizar. O
 foi O
 fazer O
 pressão O
@@ -79189,7 +79092,7 @@ do O
 Rio B-LOC
 Tamanduateí I-LOC
 , O
-e... O
+e. O
 limpeza O
 de O
 bueiros O
@@ -79259,7 +79162,7 @@ Natal B-TMP
 , O
 já O
 teve O
-participação... O
+participação. O
 bastante O
 atuante O
 a O
@@ -79290,7 +79193,7 @@ do O
 conselho, O
 mas O
 vamos O
-dizer... O
+dizer. O
 inclusive O
 a O
 gente O
@@ -79304,7 +79207,7 @@ inclusive O
 nesse O
 aspecto O
 também, O
-na... O
+na. O
 questão O
 de O
 se O
@@ -79313,7 +79216,7 @@ um O
 terminal O
 de O
 ônibus O
-para... O
+para. O
 terminal O
 de O
 ônibus O
@@ -79329,7 +79232,7 @@ de O
 São B-LOC
 Paulo I-LOC
 , O
-para... O
+para. O
 as O
 pessoas O
 se O
@@ -79374,7 +79277,7 @@ para O
 levar O
 os O
 produtos O
-e... O
+e. O
 viajam O
 entre O
 amigos. O
@@ -79439,7 +79342,7 @@ inaugurar. O
 P O
 - O
 Bom, O
-no... O
+no. O
 nessa O
 questão O
 do O
@@ -79458,16 +79361,16 @@ mais O
 gosta O
 de O
 fazer, O
-assim... O
+assim. O
 R O
 - O
 Em O
 termos O
-de...? O
+de.? O
 P O
 - O
 Do O
-trabalho... O
+trabalho. O
 da O
 atividade O
 do O
@@ -79547,7 +79450,7 @@ rotina O
 chata O
 do O
 dia-a-dia, O
-né... O
+né. O
 (riso). O
 Mas O
 esse O
@@ -79580,7 +79483,7 @@ sua O
 esposa, O
 o O
 nome O
-dela... O
+dela. O
 R O
 - O
 Bom, O
@@ -79605,8 +79508,8 @@ um O
 amigo O
 meu, O
 não O
-é... O
-e... O
+é. O
+e. O
 de O
 repente O
 nós O
@@ -79697,7 +79600,7 @@ três O
 filhos, O
 já O
 numa O
-idade... O
+idade. O
 expressiva, O
 um O
 de O
@@ -79851,14 +79754,14 @@ senhor O
 acha O
 que O
 vai O
-ser... O
+ser. O
 R O
--...em O
+-.em O
 relação O
 a O
 eles? O
 P O
--...em O
+-.em O
 relação O
 a O
 eles O
@@ -79893,7 +79796,7 @@ eu O
 acho O
 que O
 o O
-armarinho... O
+armarinho. O
 nesse O
 ponto O
 que O
@@ -80021,7 +79924,7 @@ através O
 do O
 computador O
 que O
-possam... O
+possam. O
 possam O
 continuar O
 tornando O
@@ -80038,7 +79941,7 @@ sem O
 precisar O
 se O
 locomover O
-tanto... O
+tanto. O
 quer O
 dizer, O
 é O
@@ -80101,7 +80004,7 @@ do O
 senhor, O
 o O
 senhor O
-mudaria... O
+mudaria. O
 ou O
 não? O
 R O
@@ -80161,10 +80064,10 @@ miolozinho O
 da O
 Europa B-LOC
 em O
-que... O
+que. O
 talvez O
 até O
-eu... O
+eu. O
 em O
 vidas O
 passadas O
@@ -80173,7 +80076,7 @@ tivesse O
 passado O
 por O
 lá. O
-E... O
+E. O
 aquilo O
 me O
 encanta! O
@@ -80182,7 +80085,7 @@ fato O
 de O
 eu O
 poder O
-imaginar... O
+imaginar. O
 de O
 estar O
 morando O
@@ -80193,8 +80096,7 @@ ou O
 vivendo O
 um O
 período O
-lá, O
-... O
+lá,. O
 mexe O
 com O
 o O
@@ -80238,7 +80140,7 @@ outra O
 profissão. O
 Eu O
 acabei O
-na... O
+na. O
 na O
 geração O
 em O
@@ -80284,7 +80186,7 @@ isso, O
 e O
 acabei O
 abraçando O
-e... O
+e. O
 sem O
 comparar O
 isso O
@@ -80363,7 +80265,7 @@ do O
 senhor? O
 R O
 - O
-Ich... O
+Ich. O
 P O
 - O
 Eu O
@@ -80371,7 +80273,7 @@ sei O
 que O
 tem O
 vários, O
-mas... O
+mas. O
 (riso) O
 R O
 - O
@@ -80383,7 +80285,7 @@ tenho O
 assim O
 um O
 sonho O
-tão... O
+tão. O
 vamos O
 dizer, O
 uma O
@@ -80446,9 +80348,9 @@ não O
 tenho O
 grandes O
 ambições, O
-nem... O
+nem. O
 vamos O
-dizer... O
+dizer. O
 grandes O
 necessidades O
 de O
@@ -80594,7 +80496,7 @@ besteiras O
 que O
 eu O
 vim O
-falar... O
+falar. O
 Acho O
 que O
 é O
@@ -80604,7 +80506,7 @@ extremamente O
 válido, O
 um O
 trabalho O
-extremamente... O
+extremamente. O
 sensível, O
 inclusive, O
 até O
@@ -80644,7 +80546,7 @@ outras O
 pessoas, O
 de O
 marcar O
-um... O
+um. O
 vamos O
 dizer, O
 a O
@@ -80660,7 +80562,7 @@ São B-LOC
 Paulo I-LOC
 . O
 Acredito O
-que... O
+que. O
 a O
 somatória O
 desses O
@@ -80676,7 +80578,7 @@ como O
 as O
 pessoas O
 vivem O
-e... O
+e. O
 e O
 o O
 histórico O
@@ -80733,7 +80635,7 @@ oportunidade, O
 e O
 espero O
 um O
-dia...poder O
+dia.poder O
 pelo O
 menos O
 me O
@@ -81833,8 +81735,7 @@ Um O
 passo O
 em O
 frente O
-» O
-, O
+», O
 « O
 Ronda-da-caridade O
 » O
@@ -81843,8 +81744,7 @@ Semente O
 da O
 Boa O
 vontade O
-» O
-. O
+». O
 
 PCP B-ORG
 de O
