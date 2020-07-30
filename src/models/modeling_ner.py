@@ -7,6 +7,7 @@ import pytorch_lightning as pl
 from seqeval.metrics import f1_score, classification_report
 
 from .evaluate import get_trues_and_preds_entities
+from .eval_utils import clean_ids, truncate_or_pad, entities_tags_from_target_ids
 from .modeling_utils import ConfigBase
 
 
@@ -74,8 +75,20 @@ class ModelForNERBase(ConfigBase):
         outputs = self._handle_batch(batch)
         target_token_ids = self.get_target_token_ids(batch)
         predicted_token_ids = self.get_predicted_token_ids(batch)
-        target_entities, predicted_entities = self.get_target_and_predicted_entities(
-            target_token_ids, predicted_token_ids)
+
+        target_entities = []
+        predicted_entities = []
+        for p in range(len(target_token_ids)):
+            targ_ids = target_token_ids[p]
+            targ_ids = clean_ids(targ_ids)
+            pred_ids = predicted_token_ids[p]
+            pred_ids = clean_ids(pred_ids)[1:]  # remove pad token
+
+            target_ents = entities_tags_from_target_ids(self, targ_ids)
+            predic_ents = entities_tags_from_target_ids(self, pred_ids)
+
+            predic_ents = truncate_or_pad(predic_ents, len(target_ents))
+
         return outputs, target_entities, predicted_entities
 
     def _handle_eval_epoch_end(self, outputs, phase):
