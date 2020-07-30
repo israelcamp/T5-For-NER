@@ -89,6 +89,9 @@ class ModelForNERBase(ConfigBase):
 
             predic_ents = truncate_or_pad(predic_ents, len(target_ents))
 
+            target_entities.append(target_ents)
+            predicted_entities.append(predic_ents)
+
         return outputs, target_entities, predicted_entities
 
     def _handle_eval_epoch_end(self, outputs, phase):
