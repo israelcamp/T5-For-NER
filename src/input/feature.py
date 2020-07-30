@@ -37,6 +37,7 @@ class InputSpanFeatures(object):
                  input_ids,
                  attention_mask,
                  label_tags,
+                 original_label_tags,
                  target_ids):
         self.unique_id = unique_id
         self.doc_span_index = doc_span_index
@@ -47,6 +48,7 @@ class InputSpanFeatures(object):
         self.attention_mask = attention_mask
         self.label_tags = label_tags
         self.target_ids = target_ids
+        self.original_label_tags = original_label_tags
 
         self.source_token_ids = input_ids
         self.target_token_ids = target_ids
@@ -188,6 +190,7 @@ def convert_example_to_spanfeatures(example, max_seq_length, tokenizer, doc_stri
     all_doc_labels_mask = []
     doc_text = example.source_words
     doc_labels = example.word_labels
+
     assert len(doc_labels) == len(doc_text)
 
     for (i, token) in enumerate(doc_text):
@@ -252,12 +255,13 @@ def convert_example_to_spanfeatures(example, max_seq_length, tokenizer, doc_stri
             label_tags = label_tags[:-1]
             del token_is_max_context[len(tokens)]
 
-        retokenized = tokenizer.tokenize(tokenizer.convert_tokens_to_string(tokens))
-        assert len(retokenized) == len(tokens), f'{len(retokenized)} - {len(tokens)} / {retokenized} - {tokens}'
-        assert len(tokens) == len(label_tags) == len(token_is_max_context)
-
         tokens = prefix_tokens + tokens
         tokens.append(tokenizer.eos_token)
+
+        # fix the first label tag in case it starts with I-
+        original_label_tags = label_tags.copy()
+        if label_tags[0].startswith('I-'):
+            label_tags[0] = label_tags[0].replace('I-', 'B-')
 
         input_ids = tokenizer.convert_tokens_to_ids(tokens)
 
@@ -321,6 +325,7 @@ def convert_example_to_spanfeatures(example, max_seq_length, tokenizer, doc_stri
             input_ids=input_ids,
             attention_mask=attention_mask,
             label_tags=label_tags,
+            original_label_tags=original_label_tags,
             target_ids=target_ids
         )
 
@@ -328,4 +333,4 @@ def convert_example_to_spanfeatures(example, max_seq_length, tokenizer, doc_stri
 
         features.append(feature)
 
-    return features
+    return features  # , all_doc_tokens, all_doc_labels
