@@ -127,8 +127,9 @@ class ModelForNERBase(ConfigBase):
     def validation_epoch_end(self, outputs):
         loss_avg, f1, report = self._handle_eval_epoch_end(
             outputs, phase='val')
-        progress_bar = {'val_f1': f1, 'val_loss': loss_avg}
-        return {'val_loss': loss_avg, 'val_f1': torch.tensor(f1), 'val_report': report, 'progress_bar': progress_bar}
+        val_f1 = torch.tensor(f1)
+        progress_bar = {'val_f1': val_f1, 'val_loss': loss_avg}
+        return {'val_loss': loss_avg, 'val_f1': val_f1, 'val_report': report, 'progress_bar': progress_bar}
 
     def test_epoch_end(self, outputs):
         loss_avg, f1, report = self._handle_eval_epoch_end(
