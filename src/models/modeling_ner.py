@@ -100,8 +100,12 @@ class ModelForNERBase(ConfigBase):
         if self.sep_target_ents:
             report = ''
         else:
-            report = classification_report(
-                target_entities, predicted_entities, digits=4)
+            try:
+                report = classification_report(
+                    target_entities, predicted_entities, digits=4)
+            except:
+                report = ''
+
         return loss_avg, f1, report
 
     def _average_key(self, outputs, key):
