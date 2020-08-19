@@ -8,7 +8,7 @@ import transformers
 
 from ..input.dataset import T5NERDataset
 from ..input.example import InputExample
-from ..input.feature import InputSpanFeatures, convert_example_to_spanfeatures
+from ..input.feature import InputSpanFeatures, convert_example_to_spanfeatures, convert_example_sets_to_features_sets
 from ..data.make_harem import get_example_sets
 from .modeling_t5ner import T5ForNER
 
@@ -126,17 +126,29 @@ class HaremBase:
         return features
 
     def get_features(self, examples):
-        feature_sets = {
-            setname: self.convert_examples_to_span_features(exs) for setname, exs in examples.items()
+        span_examples = {
+            setname: self.convert_examples_to_span(exs) for setname, exs in examples.items()
         }
 
-        return feature_sets
-        # kwargs = {
-        #     'max_length': self.max_length,
-        #     'end_token': self.end_token,
-        #     'prefix': 'Reconhecer Entidades:'
-        # }
-        # return convert_example_sets_to_features_sets(span_examples, self.tokenizer, **kwargs)
+        kwargs = {
+            'max_length': self.max_length,
+            'end_token': self.end_token,
+            'prefix': 'Reconhecer Entidades:'
+        }
+        return convert_example_sets_to_features_sets(span_examples, self.tokenizer, **kwargs)
+
+    # def get_features(self, examples):
+    #     # feature_sets = {
+    #     #     setname: self.convert_examples_to_span_features(exs) for setname, exs in examples.items()
+    #     # }
+
+    #     # return feature_sets
+    #     kwargs = {
+    #         'max_length': self.max_length,
+    #         'end_token': self.end_token,
+    #         'prefix': 'Reconhecer Entidades:'
+    #     }
+    #     return convert_example_sets_to_features_sets(span_examples, self.tokenizer, **kwargs)
 
 
 class T5ForHarem(HaremBase, T5ForNER):
